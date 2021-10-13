@@ -34,7 +34,7 @@ export const HelloButtonContainer = styled.div`
   .hello-btn {
     font-size: 24px;
     cursor: pointer;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     color: ${({ theme }) => theme.fontColors.gray};
   }
   .message-box {

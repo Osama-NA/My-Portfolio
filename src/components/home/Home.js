@@ -3,11 +3,12 @@ import {HomeContainer} from './Home.styled.js';
 import {ThreeDCubes} from './nested-components/ThreeDCubes';
 import {HelloButton} from './nested-components/HelloButton';
 
-export const Home = () => {
+export const Home = ({theme, cubesColor}) => {
+    
     return (
         <HomeContainer>
             <div className="designs-container">
-                <ThreeDCubes />
+                <ThreeDCubes cubesColor={cubesColor}/>
                 <HelloButton />
             </div>
             <main className="info-container">

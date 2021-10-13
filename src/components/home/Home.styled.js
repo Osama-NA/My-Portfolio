@@ -10,9 +10,10 @@ export const HomeContainer = styled.div`
     overflow: hidden;
 
     .designs-container{
+        position: relative;
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 `

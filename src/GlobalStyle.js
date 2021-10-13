@@ -14,6 +14,10 @@ export const GlobalStyle = createGlobalStyle`
         justify-content: center;
         width: 100vw;
         height: 100vh;
-        background-color: ${({ theme }) => theme.backgroundColors.darkGray};
+        background: linear-gradient(
+            35deg, 
+            ${({ theme }) => theme.backgroundColors.darkerGray} 50%, 
+            ${({ theme }) => theme.backgroundColors.darkGray} 50%
+        );
     }
 `

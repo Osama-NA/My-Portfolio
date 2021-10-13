@@ -13,7 +13,11 @@ const theme = {
   },
   backgroundColors: {
     darkGray: '#232323',
+    darkerGray: '#202020',
     lightGray: '#2F2F2F'
+  },
+  cubesColors: {
+    aquaGreen: 'rgb(0, 190, 90)'
   }
 }
 
@@ -22,8 +26,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter basename="Router">
         <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/Projects" component={Home} />
+          <Route path="/" exact>
+            <Home theme={theme} cubesColor={theme.cubesColors.aquaGreen} />
+          </Route>
         </Switch>
       </BrowserRouter>
       <GlobalStyle />
