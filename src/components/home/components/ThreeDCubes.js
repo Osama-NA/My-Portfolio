@@ -1,11 +1,11 @@
-import {ThreeDCubesContainer} from './ThreeDCubes.styled';
+import {ThreeDCubesContainer} from '../styles/ThreeDCubes.styled';
 import { Canvas } from '@react-three/fiber';
-import { Cube } from './3D/Cube.js';
+import { Cube } from './Cube.js';
 
-export const ThreeDCubes = ({cubesColor}) => {
+export const ThreeDCubes = ({ cubesColor }) => {
     return (
-        <ThreeDCubesContainer>
-            <Canvas colorManagement camera={{position:[0.0001, -0.0001, 5.7]}}>
+        <ThreeDCubesContainer data-testid="threed-cubes" >
+            <Canvas colorManagement camera={{ position: [0.0001, -0.0001, 5.7] }}>
                 <pointLight position={[10, 0, 0]} intensity={.7} />
                 <pointLight position={[-10, 0, 0]} intensity={.7} />
                 <pointLight position={[0, 10, 0]} intensity={.7} />

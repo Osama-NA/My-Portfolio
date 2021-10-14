@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component tests Home component matches snapshot 1`] = `
+<div
+  className="sc-bdfBQB gNGjzH"
+  data-testid="home"
+>
+  <div
+    className="designs-container"
+  >
+    <div
+      className="sc-gsTEea bvNmkz"
+      data-testid="threed-cubes"
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      >
+        <canvas
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="sc-dlfnuX iJirBo"
+      data-testid="hello-button"
+    >
+      <p
+        className="hello-btn"
+        onClick={[Function]}
+      >
+        Hello there!
+      </p>
+      <div
+        className="message-box"
+        data-testid="message-box"
+        style={Object {}}
+      >
+        <p>
+          Don’t waste your time clicking a hello text,
+          <br />
+          <a
+            data-testid="message-box-link"
+            href="/Router/Projects"
+            onClick={[Function]}
+          >
+            view my work here.
+          </a>
+        </p>
+        <i
+          className="fas fa-times close-btn"
+          onClick={[Function]}
+        />
+      </div>
+    </div>
+  </div>
+  <main
+    className="info-container"
+  />
+  <div
+    className="quote"
+  />
+  <div
+    className="github-icon"
+  />
+</div>
+`;

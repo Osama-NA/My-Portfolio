@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelloButton component tests HelloButton matches snapshot 1`] = `
+<div
+  className="sc-bdfBQB fwZzEE"
+  data-testid="hello-button"
+>
+  <p
+    className="hello-btn"
+    onClick={[Function]}
+  >
+    Hello there!
+  </p>
+  <div
+    className="message-box"
+    data-testid="message-box"
+    style={Object {}}
+  >
+    <p>
+      Don’t waste your time clicking a hello text,
+      <br />
+      <a
+        data-testid="message-box-link"
+        href="/Router/Projects"
+        onClick={[Function]}
+      >
+        view my work here.
+      </a>
+    </p>
+    <i
+      className="fas fa-times close-btn"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

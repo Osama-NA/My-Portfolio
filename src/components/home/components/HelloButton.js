@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {HelloButtonContainer} from './HelloButton.styled';
+import {HelloButtonContainer} from '../styles/HelloButton.styled';
 import {Link} from 'react-router-dom';
 
 export const HelloButton = () => {
@@ -23,15 +23,16 @@ export const HelloButton = () => {
     }
 
     return(
-        <HelloButtonContainer>
+        <HelloButtonContainer data-testid="hello-button">
             <p onClick={displayMessageBox} className="hello-btn" >Hello there!</p>
             <div 
                 className="message-box"
+                data-testid="message-box"
                 style={messageBoxStyle}
             >
                 <p>
                     Don’t waste your time clicking a hello text,<br />
-                    <Link to="/Projects">view my work here.</Link>
+                    <Link to="/Router/Projects" data-testid="message-box-link">view my work here.</Link>
                 </p>
                 <i 
                     className="fas fa-times close-btn"

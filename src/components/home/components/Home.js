@@ -1,12 +1,12 @@
 import React from 'react'
-import {HomeContainer} from './Home.styled.js';
-import {ThreeDCubes} from './nested-components/ThreeDCubes';
-import {HelloButton} from './nested-components/HelloButton';
+import {HomeContainer} from '../styles/Home.styled.js';
+import {ThreeDCubes} from './ThreeDCubes';
+import {HelloButton} from './HelloButton';
 
 export const Home = ({theme, cubesColor}) => {
     
     return (
-        <HomeContainer>
+        <HomeContainer data-testid="home">
             <div className="designs-container">
                 <ThreeDCubes cubesColor={cubesColor}/>
                 <HelloButton />

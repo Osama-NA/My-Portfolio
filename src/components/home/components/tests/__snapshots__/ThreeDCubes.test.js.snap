@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThreeDCubes component tests Cube component matches snapshot 1`] = `
+<div
+  className="sc-bdfBQB gFXFab"
+  data-testid="threed-cubes"
+>
+  <div
+    style={
+      Object {
+        "height": "100%",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <canvas
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`ThreeDCubes component tests ThreeDCubes component matches snapshot 1`] = `
+<div
+  className="sc-bdfBQB gFXFab"
+  data-testid="threed-cubes"
+>
+  <div
+    style={
+      Object {
+        "height": "100%",
+        "overflow": "hidden",
+        "position": "relative",
+        "width": "100%",
+      }
+    }
+  >
+    <canvas
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    />
+  </div>
+</div>
+`;
