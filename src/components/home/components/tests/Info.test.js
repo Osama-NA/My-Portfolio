@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 import { Info } from '../Info.js';
 import { cleanup, render } from '@testing-library/react';
-import { mainTheme } from '../../../../utils/mainTheme.js';
+import { mainTheme } from '../../../../utils/themes.js';
 
 afterEach(cleanup);
 

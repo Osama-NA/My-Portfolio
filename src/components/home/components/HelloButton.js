@@ -25,6 +25,8 @@ export const HelloButton = () => {
     return(
         <HelloButtonContainer data-testid="hello-button">
             <p onClick={displayMessageBox} className="hello-btn" >Hello there!</p>
+
+            {/* MESSAGE BOX */}
             <div 
                 className="message-box"
                 data-testid="message-box"
@@ -34,6 +36,8 @@ export const HelloButton = () => {
                     Don’t waste your time clicking a hello text,<br />
                     <Link to="/Router/Projects" data-testid="message-box-link">view my work here.</Link>
                 </p>
+
+                {/* CLOSE BUTTON */}
                 <i 
                     className="fas fa-times close-btn"
                     onClick={closeMessageBox}

@@ -8,6 +8,8 @@ export const ThreeDCubes = ({ cubesColor }) => {
         <ThreeDCubesContainer data-testid="threed-cubes" >
             <Suspense fallback={null}>
                 <Canvas colorManagement camera={{ position: [0.0001, -0.0001, 5.7] }}>
+
+                    {/* LIGHTING */}
                     <pointLight position={[10, 0, 0]} intensity={.7} />
                     <pointLight position={[-10, 0, 0]} intensity={.7} />
                     <pointLight position={[0, 10, 0]} intensity={.7} />
@@ -20,6 +22,7 @@ export const ThreeDCubes = ({ cubesColor }) => {
                     <pointLight position={[0, 10, -10]} intensity={.3} />
                     <ambientLight intensity={.5} />
 
+                    {/* CUBES */}
                     <Cube position={[-2, 2, 0]} color={cubesColor} /><Cube position={[0, 2, 0]} color={cubesColor} /><Cube position={[2, 2, 0]} color={cubesColor} />
                     <Cube position={[-2, 0, 0]} color={cubesColor} /><Cube position={[0, 0, 0]} color={cubesColor} />
                     <Cube position={[-2, -2, 0]} color={cubesColor} />

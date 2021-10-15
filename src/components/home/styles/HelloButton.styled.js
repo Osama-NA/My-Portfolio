@@ -7,6 +7,7 @@ export const HelloButtonContainer = styled.div`
   margin: 0 2rem;
   z-index: 1;
 
+  //Used to animate message box from visible to hidden going to the right side
   @keyframes animateBox {
     0% {
       opacity: 0;
@@ -19,6 +20,8 @@ export const HelloButtonContainer = styled.div`
       visibility: visible;
     }
   }
+
+  //Used to animate message box from hidden to visible coming from the right side
   @keyframes animateBoxOut {
     0% {
       opacity: 1;

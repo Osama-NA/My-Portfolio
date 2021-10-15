@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components';
 import { cleanup } from '@testing-library/react';
-import { mainTheme } from '../../../../utils/mainTheme.js';
+import { mainTheme } from '../../../../utils/themes.js';
 import { ThreeDCubes } from '../ThreeDCubes.js';
 import { Cube } from '../Cube.js';
 

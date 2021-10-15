@@ -12,6 +12,8 @@ export const InfoContainer = styled.main`
     align-items: center;
     margin-top: 1rem;
     z-index: 0;
+
+    // Remove text select in this element to allow better orbit control to the globe
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
