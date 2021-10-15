@@ -33,6 +33,7 @@ export const HelloButtonContainer = styled.div`
 
   .hello-btn {
     font-size: 24px;
+    font-weight: 300;
     cursor: pointer;
     padding: 2rem 0;
     color: ${({ theme }) => theme.fontColors.gray};
@@ -42,7 +43,7 @@ export const HelloButtonContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     alight-items: center;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1rem 0.8rem;
     border-radius: 10px;
     background-color: ${({ theme }) => theme.backgroundColors.lightGray};
     animation-duration: 0.8s;
@@ -50,13 +51,16 @@ export const HelloButtonContainer = styled.div`
     visibility: hidden;
 
     p, a {
-      color: ${({ theme }) => theme.fontColors.gray};
+      color: ${({ theme }) => theme.fontColors.white};
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 200;
       padding-right: 3rem;
+      letter-spacing: .8px;
+      opacity: .7;
     }
     a {
       padding-right: 0;
+      padding-bottom: .2rem;
       text-decoration: none;
       border-bottom: 1px solid ${({ theme }) => theme.themeColors.aquaGreen};
     }

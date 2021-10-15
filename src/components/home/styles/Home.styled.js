@@ -7,6 +7,7 @@ export const HomeContainer = styled.div`
     max-height: 950px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow: hidden;
 
     .designs-container{

@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 500;
         padding: 0;
         margin: 0;
+        letter-spacing: .6px;
     }
     body{
         color: ${({ theme }) => theme.fontColors.white};
@@ -15,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         width: 100vw;
         height: 100vh;
         background: linear-gradient(
-            35deg, 
+            45deg, 
             ${({ theme }) => theme.backgroundColors.darkerGray} 50%, 
             ${({ theme }) => theme.backgroundColors.darkGray} 50%
         );

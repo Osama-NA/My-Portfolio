@@ -8,7 +8,7 @@ export const mainTheme = {
     },
     backgroundColors: {
         darkGray: '#232323',
-        darkerGray: '#202020',
+        darkerGray: '#1c1c1c',
         lightGray: '#2F2F2F'
     },
     cubesColors: {

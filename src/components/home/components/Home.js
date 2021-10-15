@@ -2,6 +2,7 @@ import React from 'react'
 import {HomeContainer} from '../styles/Home.styled.js';
 import {ThreeDCubes} from './ThreeDCubes';
 import {HelloButton} from './HelloButton';
+import {Info} from './Info';
 
 export const Home = ({theme, cubesColor}) => {
     
@@ -11,15 +12,7 @@ export const Home = ({theme, cubesColor}) => {
                 <ThreeDCubes cubesColor={cubesColor}/>
                 <HelloButton />
             </div>
-            <main className="info-container">
-
-            </main>
-            <div className="quote">
-
-            </div>
-            <div className="github-icon">
-
-            </div>
+            <Info />
         </HomeContainer>
     )
 }
