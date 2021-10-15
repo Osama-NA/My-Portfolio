@@ -15,7 +15,11 @@ describe("Home component tests", () => {
         return (
             <BrowserRouter>
                 <ThemeProvider theme={mainTheme}>
-                    <Home theme={mainTheme} cubesColor="black" />
+                    <Home 
+                        theme={mainTheme} 
+                        cubesColor="lightpink" 
+                        circleBackground="lightblue"
+                    />
                 </ThemeProvider>
             </BrowserRouter>
         )
@@ -41,7 +45,10 @@ describe("Home component tests", () => {
         expect(getByTestId('home')).toContainElement(getByTestId('threed-cubes'));
     })
 
-
+    it("Home component contains Info component", () =>{
+        const { getByTestId } = render(<HomeComponent />);
+        expect(getByTestId('home')).toContainElement(getByTestId('info'));
+    })
 
     it("Home component matches snapshot", () => {
         const tree = renderer.create(<HomeComponent />).toJSON();

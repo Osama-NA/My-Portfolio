@@ -7,16 +7,18 @@ import {WavyCircle} from './WavyCircle';
 
 export const Info = ({circleBackground}) => {
     return (
-        <InfoContainer>
+        <InfoContainer data-testid="info">
             <h1>Osama Al Hajj Ali</h1>
             <h3>I am a web developer</h3>
-            <ul>
-                <li><Link to="">Projects</Link></li>
-                <li><Link to="">Contact me</Link></li>
-                <li><Link to="">About me</Link></li>
-            </ul>
+            <nav>
+                <ul data-testid="nav-bar">
+                    <li><Link to="/Router/Projects" data-testid="projects-link">Projects</Link></li>
+                    <li><Link to="/Router/Contacts" data-testid="contacts-link">Contact me</Link></li>
+                    <li><Link to="/Router/About" data-testid="about-link">About me</Link></li>
+                </ul>
+            </nav>
             <div className="globe-container">
-                <div className="globe">
+                <div className="globe" data-testid="globe">
                     <Canvas>
                         <Suspense fallback={null}>
                             <pointLight position={[10, 10, 10]} />

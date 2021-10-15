@@ -12,8 +12,8 @@ function App() {
           <Route path="/" exact>
             <Home 
               theme={mainTheme}
-              cubesColor={mainTheme.cubesColors.aquaGreen}
-              circleBackground={mainTheme.circleBackground.color}
+              cubesColor={mainTheme.cubesColor}
+              circleBackground={mainTheme.circleBackground}
             />
           </Route>
         </Switch>

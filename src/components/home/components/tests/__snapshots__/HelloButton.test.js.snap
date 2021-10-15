@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HelloButton component tests HelloButton matches snapshot 1`] = `
+exports[`HelloButton component tests HelloButton component matches snapshot 1`] = `
 <div
-  className="sc-bdfBQB eeYMUX"
+  className="sc-bdfBQB fKHcuL"
   data-testid="hello-button"
 >
   <p

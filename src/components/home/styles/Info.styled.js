@@ -18,7 +18,7 @@ export const InfoContainer = styled.main`
     user-select: none;  
 
     h1{
-        color: ${({ theme }) => theme.themeColors.aquaGreen};
+        color: ${({ theme }) => theme.themeColors.mainColor};
         font-size: 54px;
         font-weight: bolder;
         margin: .5rem;
@@ -31,34 +31,36 @@ export const InfoContainer = styled.main`
         letter-spacing: 2px;
         margin: .5rem;
     }
-    ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 1.5rem;
+    nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem;
 
-        li{
-            list-style: none;
+            li{
+                list-style: none;
 
-            a{
-                text-decoration: none;
-                color: ${({ theme }) => theme.fontColors.gray};
-                font-size: 16px;
-                font-weight: 400;
-                text-transform: uppercase;
-                padding-right: 1rem;
-                letter-spacing: 1.5px;
-                text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
-                transition: all .3s ease;
+                a{
+                    text-decoration: none;
+                    color: ${({ theme }) => theme.fontColors.secondary};
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding-right: 1rem;
+                    letter-spacing: 1.5px;
+                    text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
+                    transition: all .3s ease;
+                }
+                a:hover{
+                    color: ${({ theme }) => theme.themeColors.mainColor};
+                }
             }
-            a:hover{
-                color: ${({ theme }) => theme.themeColors.aquaGreen};
-            }
-        }
-        li:nth-child(3){
-            a{
-                padding-right: 0;
+            li:nth-child(3){
+                a{
+                    padding-right: 0;
+                }
             }
         }
     }
@@ -67,7 +69,7 @@ export const InfoContainer = styled.main`
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: ${({ theme }) => theme.backgroundColors.darkerGray};
+        background-color: ${({ theme }) => theme.backgroundColors.darkSide};
         width: 600px;
         height: 600px;
         border-radius: 50%;
