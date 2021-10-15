@@ -13,6 +13,7 @@ function App() {
             <Home 
               theme={mainTheme}
               cubesColor={mainTheme.cubesColors.aquaGreen}
+              circleBackground={mainTheme.circleBackground.color}
             />
           </Route>
         </Switch>

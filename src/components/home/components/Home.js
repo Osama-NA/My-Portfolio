@@ -4,7 +4,7 @@ import {ThreeDCubes} from './ThreeDCubes';
 import {HelloButton} from './HelloButton';
 import {Info} from './Info';
 
-export const Home = ({theme, cubesColor}) => {
+export const Home = ({cubesColor, circleBackground}) => {
     
     return (
         <HomeContainer data-testid="home">
@@ -12,7 +12,7 @@ export const Home = ({theme, cubesColor}) => {
                 <ThreeDCubes cubesColor={cubesColor}/>
                 <HelloButton />
             </div>
-            <Info />
+            <Info circleBackground={circleBackground} />
         </HomeContainer>
     )
 }

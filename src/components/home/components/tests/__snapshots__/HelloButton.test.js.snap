@@ -2,7 +2,7 @@
 
 exports[`HelloButton component tests HelloButton matches snapshot 1`] = `
 <div
-  className="sc-bdfBQB fwZzEE"
+  className="sc-bdfBQB eeYMUX"
   data-testid="hello-button"
 >
   <p

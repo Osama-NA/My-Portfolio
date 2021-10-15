@@ -5,6 +5,7 @@ export const HelloButtonContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   margin: 0 2rem;
+  z-index: 1;
 
   @keyframes animateBox {
     0% {
@@ -56,13 +57,13 @@ export const HelloButtonContainer = styled.div`
       font-weight: 200;
       padding-right: 3rem;
       letter-spacing: .8px;
-      opacity: .7;
     }
     a {
+      color: ${({ theme }) => theme.themeColors.aquaGreen};
+      font-weight: 400;
       padding-right: 0;
       padding-bottom: .2rem;
       text-decoration: none;
-      border-bottom: 1px solid ${({ theme }) => theme.themeColors.aquaGreen};
     }
     i {
       cursor: pointer;

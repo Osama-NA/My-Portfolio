@@ -1,17 +1,21 @@
 export const mainTheme = {
     themeColors: {
-        aquaGreen: '#25FFA3'
+        aquaGreen: '#ffaaa5'
     },
     fontColors: {
-        gray: '#707070',
-        white: '#fff'
+        gray: '#e0e0e0',
+        white: '#fff',
+        hover: '#7e7bf8'
     },
     backgroundColors: {
-        darkGray: '#232323',
-        darkerGray: '#1c1c1c',
-        lightGray: '#2F2F2F'
+        darkGray: '#363062',
+        darkerGray: '#29244d',
+        lightGray: '#4d4c7d'
     },
     cubesColors: {
-        aquaGreen: 'rgb(0, 190, 90)'
+        aquaGreen: '#ff7272'
+    },
+    circleBackground: {
+        color: '#4d4c7d'
     }
 }
