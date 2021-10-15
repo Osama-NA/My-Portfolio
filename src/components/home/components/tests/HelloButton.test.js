@@ -41,7 +41,7 @@ describe("HelloButton component tests", () => {
         expect(getByTestId('message-box-link')).toHaveAttribute('href', '/Router/Projects');
     })
 
-    it("HelloButton matches snapshot", () => {
+    it("HelloButton component matches snapshot", () => {
         const tree = renderer.create(<HelloButtonComponent />).toJSON();
         expect(tree).toMatchSnapshot();
     })

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info component tests Info component matches snapshot 1`] = `
+<main
+  className="sc-bdfBQB iqYKqz"
+  data-testid="info"
+>
+  <h1>
+    Osama Al Hajj Ali
+  </h1>
+  <h3>
+    I am a web developer
+  </h3>
+  <nav>
+    <ul
+      data-testid="nav-bar"
+    >
+      <li>
+        <a
+          data-testid="projects-link"
+          href="/Router/Projects"
+          onClick={[Function]}
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          data-testid="contacts-link"
+          href="/Router/Contacts"
+          onClick={[Function]}
+        >
+          Contact me
+        </a>
+      </li>
+      <li>
+        <a
+          data-testid="about-link"
+          href="/Router/About"
+          onClick={[Function]}
+        >
+          About me
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    className="globe-container"
+  >
+    <div
+      className="globe"
+      data-testid="globe"
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "overflow": "hidden",
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      >
+        <canvas
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</main>
+`;
