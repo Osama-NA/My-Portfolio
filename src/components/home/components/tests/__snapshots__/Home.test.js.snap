@@ -32,7 +32,7 @@ exports[`Home component tests Home component matches snapshot 1`] = `
       </div>
     </div>
     <div
-      className="sc-dlfnuX deqOwr"
+      className="sc-dlfnuX jFMPZB"
       data-testid="hello-button"
     >
       <p
@@ -65,7 +65,7 @@ exports[`Home component tests Home component matches snapshot 1`] = `
     </div>
   </div>
   <main
-    className="sc-hKgJUU gFXbWw"
+    className="sc-hKgJUU eYMHeC"
     data-testid="info"
   >
     <h1>

@@ -3,6 +3,7 @@ import {HomeContainer} from '../styles/Home.styled.js';
 import {ThreeDCubes} from './ThreeDCubes';
 import {HelloButton} from './HelloButton';
 import {Info} from './Info';
+import {Quote} from './Quote';
 
 export const Home = ({cubesColor, circleBackground}) => {
     
@@ -13,6 +14,9 @@ export const Home = ({cubesColor, circleBackground}) => {
                 <HelloButton />
             </div>
             <Info circleBackground={circleBackground} />
+            <footer>
+                <Quote />
+            </footer>
         </HomeContainer>
     )
 }

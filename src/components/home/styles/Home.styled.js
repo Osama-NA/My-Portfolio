@@ -18,4 +18,13 @@ export const HomeContainer = styled.div`
         flex-direction: row;
         justify-content: flex-end;
     }
+    footer{
+        position: relative;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 2rem;
+        width: 100%;
+        min-height: 100px;
+    }
 `
