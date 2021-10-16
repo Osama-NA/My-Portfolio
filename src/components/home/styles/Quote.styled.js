@@ -2,11 +2,9 @@ import styled from 'styled-components';
 
 export const QuoteContainer = styled.div`
     position: relative;
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
+    width: 30%;
     height: 100px;
+    margin: 2rem;
 
     p{
         color: ${({ theme }) => theme.fontColors.primary };

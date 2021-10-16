@@ -78,6 +78,7 @@ export const InfoContainer = styled.main`
         z-index: -1;
 
         .globe{
+            cursor: pointer;
             width: 350px;
             height: 350px;
             z-index: -1;

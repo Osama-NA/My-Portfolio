@@ -4,6 +4,7 @@ import {ThreeDCubes} from './ThreeDCubes';
 import {HelloButton} from './HelloButton';
 import {Info} from './Info';
 import {Quote} from './Quote';
+import {IconLinks} from './IconLinks';
 
 export const Home = ({cubesColor, circleBackground}) => {
     
@@ -16,6 +17,7 @@ export const Home = ({cubesColor, circleBackground}) => {
             <Info circleBackground={circleBackground} />
             <footer>
                 <Quote />
+                <IconLinks />
             </footer>
         </HomeContainer>
     )

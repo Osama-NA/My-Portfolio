@@ -19,12 +19,12 @@ export const HomeContainer = styled.div`
         justify-content: flex-end;
     }
     footer{
-        position: relative;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 2rem;
         width: 100%;
         min-height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+        display: flex;
+        flex-direction: row;
     }
 `
