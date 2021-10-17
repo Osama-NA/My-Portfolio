@@ -6,11 +6,19 @@ export const QuoteContainer = styled.div`
     height: 100px;
     margin: 2rem;
 
+    .quote{
+        color: ${({ theme }) => theme.themeColors.mainColor };
+        font-size: 18px;
+        position: absolute;
+        top: -25px;
+        text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
+    }
     p{
         color: ${({ theme }) => theme.fontColors.primary };
         position:absolute;
         font-size: 22px;
         letter-spacing: 2px;
+        text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
 
         span{
             color: ${({ theme }) => theme.themeColors.mainColor }
@@ -24,20 +32,5 @@ export const QuoteContainer = styled.div`
     }
     .mac{
         top: 70px;
-
-        // to toggle cursor opacity every .8s
-        @keyframes cursorToggle{
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        span{
-            animation-name: cursorToggle;
-            animation-duration: .8s;
-            animation-iteration-count: infinite;
-        }
     }
 `

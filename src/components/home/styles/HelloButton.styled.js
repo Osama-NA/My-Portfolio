@@ -41,6 +41,7 @@ export const HelloButtonContainer = styled.div`
     cursor: pointer;
     padding: 2rem 0;
     color: ${({ theme }) => theme.fontColors.secondary};
+    text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
   }
   .message-box {
     display: flex;

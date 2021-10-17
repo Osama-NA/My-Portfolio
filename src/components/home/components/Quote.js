@@ -67,9 +67,9 @@ export const Quote = () => {
             case LEARN:
                 return index < size(LEARN) ? "_" : "";
             case DEVELOP:
-                return index < size(LEARN) + size(DEVELOP) && index >= size(LEARN) ? "_" : "";
+                return index < size(LEARN) + size(DEVELOP) && index >= size(LEARN) ? "_" : ""; // if index less than (learn + develop) size and greater than learn size
             case MAC:
-                return index < size(LEARN) + size(DEVELOP) + size(MAC) && index >= size(LEARN) + size(DEVELOP) ? "_" : "";
+                return index < size(LEARN) + size(DEVELOP) + size(MAC) && index >= size(LEARN) + size(DEVELOP) ? "_" : ""; // if index less than (learn + develop + mac) size and greater than (learn + develop) size
             default:
                 return;
         }
@@ -77,6 +77,7 @@ export const Quote = () => {
 
     return (
         <QuoteContainer>
+            <i className="fas fa-quote-left quote"></i>
             <p className="learn">
                 {learn}{getCursorCondition(LEARN)}
                 <span style={getLearnDisplay()}>.</span>
@@ -87,7 +88,7 @@ export const Quote = () => {
             </p>
             <p className="mac">
                 {mac}{getCursorCondition(MAC)}
-                <span style={getMacDisplay()}>_</span>
+                <span style={getMacDisplay()}>.</span>
             </p>
         </QuoteContainer>
     )

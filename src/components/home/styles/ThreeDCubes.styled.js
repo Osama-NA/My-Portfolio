@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ThreeDCubesContainer = styled.div`
-  width: 280px;
-  height: 280px;
+  width: 265px;
+  height: 265px;
   max-width: 300px;
   max-height: 300px;
   position: absolute;

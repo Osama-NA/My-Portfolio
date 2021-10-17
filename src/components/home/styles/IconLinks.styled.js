@@ -9,16 +9,25 @@ export const IconLinksContainer = styled.div`
     justify-content: center;
     margin-bottom: 2rem;
 
+    .circle{
+        width: 8.5px;
+        height: 8.5px;
+        border-radius: 50%;
+        margin: 0 1rem;
+        background-color: ${({ theme }) => theme.backgroundColors.lightBackground};
+    }
     a{
         i{
+            opacity: .9;
             font-size: 38px;
             color: ${({ theme }) => theme.fontColors.primary};
-            transition: all .3s ease;
+            transition: all .2s ease;
         }
     }
     a:hover{
         i{
-            color: ${({ theme }) => theme.themeColors.mainColor};
+            color: ${({ theme }) => theme.backgroundColors.lightBackground};
+            text-shadow: none;
         }
     }
 `
