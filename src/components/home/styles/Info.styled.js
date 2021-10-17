@@ -10,7 +10,6 @@ export const InfoContainer = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
     z-index: 0;
 
     // Remove text select in this element to allow better orbit control to the globe

@@ -1,4 +1,4 @@
-export const mainTheme = {
+export const lightPinkTheme = {
     themeColors: {
         mainColor: '#ffaaa5'
     },

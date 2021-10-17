@@ -18,15 +18,16 @@ export const IconLinksContainer = styled.div`
     }
     a{
         i{
-            opacity: .9;
+            opacity: .85;
             font-size: 38px;
             color: ${({ theme }) => theme.fontColors.primary};
-            transition: all .2s ease;
+            transition: all .1s ease;
+            text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
         }
     }
     a:hover{
         i{
-            color: ${({ theme }) => theme.backgroundColors.lightBackground};
+            opacity: 1;
             text-shadow: none;
         }
     }
