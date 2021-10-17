@@ -26,5 +26,11 @@ export const HomeContainer = styled.div`
         left: 0; 
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+
+        .themes-button{
+            align-self: flex-end;
+            margin: 2rem;
+        }
     }
 `

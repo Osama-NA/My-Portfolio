@@ -1,5 +1,5 @@
 import {createContext, useReducer} from 'react';
-import { lightPinkTheme } from '../utils/themes';
+import { lightPinkTheme } from '../utils/themes'; //used as the initial theme
 
 const themeReducer = (state, action) => {
     switch (action.type) {

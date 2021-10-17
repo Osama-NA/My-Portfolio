@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer'
 import { ThemeProvider } from 'styled-components';
 import { cleanup } from '@testing-library/react';
-import { mainTheme } from '../../../../utils/themes.js';
-import { ThreeDCubes } from '../ThreeDCubes.js';
-import { Cube } from '../Cube.js';
+import { lightPinkTheme } from '../../../utils/themes.js';
+import { ThreeDCubes } from '../components/ThreeDCubes.js';
+import { Cube } from '../components/Cube.js';
 
 afterEach(cleanup);
 
@@ -13,7 +13,7 @@ describe("ThreeDCubes component tests", () => {
 
     const ThreeDCubesComponent = () => {
         return (
-            <ThemeProvider theme={mainTheme}>
+            <ThemeProvider theme={lightPinkTheme}>
                 <ThreeDCubes cubesColor="black" />
             </ThemeProvider>
         )
@@ -21,7 +21,7 @@ describe("ThreeDCubes component tests", () => {
 
     const CubeComponent = () => {
         return (
-            <ThemeProvider theme={mainTheme}>
+            <ThemeProvider theme={lightPinkTheme}>
                 <ThreeDCubes cubesColor="black">
                     <Cube />
                 </ThreeDCubes>

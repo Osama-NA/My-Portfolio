@@ -2,14 +2,14 @@
 
 exports[`Home component tests Home component matches snapshot 1`] = `
 <div
-  className="sc-bdfBQB eOOenb"
+  className="sc-bdfBQB epEUgK"
   data-testid="home"
 >
   <div
     className="designs-container"
   >
     <div
-      className="sc-gsTEea fzhngQ"
+      className="sc-gsTEea KETHo"
       data-testid="threed-cubes"
     >
       <div
@@ -32,7 +32,7 @@ exports[`Home component tests Home component matches snapshot 1`] = `
       </div>
     </div>
     <div
-      className="sc-dlfnuX jFMPZB"
+      className="sc-dlfnuX douitY"
       data-testid="hello-button"
     >
       <p
@@ -65,7 +65,7 @@ exports[`Home component tests Home component matches snapshot 1`] = `
     </div>
   </div>
   <main
-    className="sc-hKgJUU eYMHeC"
+    className="sc-hKgJUU PZkbk"
     data-testid="info"
   >
     <h1>
@@ -135,5 +135,78 @@ exports[`Home component tests Home component matches snapshot 1`] = `
       </div>
     </div>
   </main>
+  <footer>
+    <div
+      className="sc-eCstlR bYgCvX"
+    >
+      <i
+        className="fas fa-quote-left quote"
+      />
+      <p
+        className="learn"
+      >
+        
+        _
+        <span
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          .
+        </span>
+      </p>
+      <p
+        className="develop"
+      >
+        
+        
+        <span
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          .
+        </span>
+      </p>
+      <p
+        className="mac"
+      >
+        
+        
+        <span
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          .
+        </span>
+      </p>
+    </div>
+    <div
+      className="sc-jSgvzq eGTnut"
+    >
+      <div
+        className="circle"
+      />
+      <a
+        href="https://github.com/Osama-NA"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          className="fab fa-github"
+        />
+      </a>
+      <div
+        className="circle"
+      />
+    </div>
+  </footer>
 </div>
 `;

@@ -1,10 +1,11 @@
 import React from 'react'
-import {HomeContainer} from '../styles/Home.styled.js';
-import {ThreeDCubes} from './ThreeDCubes';
-import {HelloButton} from './HelloButton';
-import {Info} from './Info';
-import {Quote} from './Quote';
-import {IconLinks} from './IconLinks';
+import {HomeContainer} from './styles/Home.styled.js';
+import {ThreeDCubes} from './components/ThreeDCubes';
+import { HelloButton } from './components/HelloButton';
+import { Info } from './components/Info';
+import {Quote} from './components/Quote';
+import { IconLinks } from './components/IconLinks';
+import {ThemesButton} from '../ThemesButton/ThemesButton';
 
 export const Home = ({cubesColor, circleBackground}) => {
     
@@ -18,6 +19,7 @@ export const Home = ({cubesColor, circleBackground}) => {
             <footer>
                 <Quote />
                 <IconLinks />
+                <ThemesButton />
             </footer>
         </HomeContainer>
     )

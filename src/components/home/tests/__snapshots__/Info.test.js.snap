@@ -2,7 +2,7 @@
 
 exports[`Info component tests Info component matches snapshot 1`] = `
 <main
-  className="sc-bdfBQB bFVLmd"
+  className="sc-bdfBQB jxlHTn"
   data-testid="info"
 >
   <h1>

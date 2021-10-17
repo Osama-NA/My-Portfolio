@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
-import { Info } from '../Info.js';
+import { Info } from '../components/Info.js';
 import { cleanup, render } from '@testing-library/react';
-import { mainTheme } from '../../../../utils/themes.js';
+import { lightPinkTheme } from '../../../utils/themes.js';
 
 afterEach(cleanup);
 
@@ -14,7 +14,7 @@ describe("Info component tests", () => {
     const InfoComponent = () => {
         return (
             <BrowserRouter>
-                <ThemeProvider theme={mainTheme}>
+                <ThemeProvider theme={lightPinkTheme}>
                     <Info circleBackground="lightblue" />
                 </ThemeProvider>
             </BrowserRouter>

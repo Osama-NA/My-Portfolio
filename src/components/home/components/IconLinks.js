@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconLinksContainer} from '../styles/IconLinks.styled';
+import { IconLinksContainer } from '../styles/IconLinks.styled';
 
 export const IconLinks = () => {
     return (

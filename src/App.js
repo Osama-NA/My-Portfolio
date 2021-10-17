@@ -1,6 +1,6 @@
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components'
-import { Home } from './components/home/components/Home.js';
+import { Home } from './components/home/Home.js';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AppContainer } from './App.styled.js';
 import { ThemesContext } from './contexts/ThemesContext';

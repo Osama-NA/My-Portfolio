@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {InfoContainer} from '../styles/Info.styled';
+import { InfoContainer } from '../styles/Info.styled';
 import { GlobeContainer } from './GlobeContainer';
 
 export const Info = ({circleBackground}) => {
