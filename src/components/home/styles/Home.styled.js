@@ -10,14 +10,7 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-
-    .designs-container{
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
+    
     footer{
         width: 100%;
         min-height: 100px;
@@ -28,7 +21,7 @@ export const HomeContainer = styled.div`
         flex-direction: row;
         justify-content: space-between;
 
-        .themes-button{
+        .hello-button{
             align-self: flex-end;
             margin: 2rem;
         }

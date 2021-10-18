@@ -24,7 +24,7 @@ export const InfoContainer = styled.main`
         font-weight: bolder;
         margin: .5rem;
         letter-spacing: 2.5px;
-        text-shadow: -1px 1px 4px rgb(0 0 0 / 79%);
+        text-shadow: -1px 1px 4px rgb(0 0 0 / 70%);
     }
     h3{
         font-size: 34px;0.5

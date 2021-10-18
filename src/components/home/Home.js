@@ -5,21 +5,17 @@ import { HelloButton } from './components/HelloButton';
 import { Info } from './components/Info';
 import {Quote} from './components/Quote';
 import { IconLinks } from './components/IconLinks';
-import {ThemesButton} from '../ThemesButton/ThemesButton';
 
 export const Home = ({cubesColor, circleBackground}) => {
     
     return (
         <HomeContainer data-testid="home">
-            <div className="designs-container">
-                <ThreeDCubes cubesColor={cubesColor}/>
-                <HelloButton />
-            </div>
+            <ThreeDCubes cubesColor={cubesColor} />
             <Info circleBackground={circleBackground} />
             <footer>
                 <Quote />
                 <IconLinks />
-                <ThemesButton />
+                <HelloButton />
             </footer>
         </HomeContainer>
     )

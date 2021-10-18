@@ -6,4 +6,5 @@ export const AppContainer = styled.div`
     height: 100vh;
     max-width: 1550px;
     max-height: 950px;
+    overflow: hidden;
 `

@@ -25,12 +25,12 @@ export const QuoteContainer = styled.div`
         }
     }
     .learn{
-        top: 0px;
+        top: 5px;
     }
     .develop{
-        top: 35px;
+        top: 40px;
     }
     .mac{
-        top: 70px;
+        top: 75px;
     }
 `

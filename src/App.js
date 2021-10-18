@@ -4,6 +4,7 @@ import { Home } from './components/home/Home.js';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AppContainer } from './App.styled.js';
 import { ThemesContext } from './contexts/ThemesContext';
+import { ThemesButton } from './components/ThemesButton/ThemesButton';
 import { useContext } from 'react';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             </Route>
           </Switch>
         </BrowserRouter>
+        <ThemesButton />
         <GlobalStyle />
       </AppContainer>
     </ThemeProvider>
