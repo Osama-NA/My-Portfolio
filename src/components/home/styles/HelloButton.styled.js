@@ -42,6 +42,10 @@ export const HelloButtonContainer = styled.div`
     padding: 2rem 0;
     color: ${({ theme }) => theme.fontColors.secondary};
     text-shadow: -1px 1px 3px rgb(0 0 0 / 60%);
+
+    span{
+      color: ${({ theme }) => theme.themeColors.mainColor};
+    }
   }
   .message-box {
     display: flex;
@@ -53,6 +57,7 @@ export const HelloButtonContainer = styled.div`
     background-color: ${({ theme }) => theme.backgroundColors.lightBackground};
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
+    box-shadow: -1px 1px 3px rgb(0 0 0 / 30%);
     visibility: hidden;
 
     p, a {

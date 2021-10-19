@@ -15,9 +15,10 @@ export const ThemesButtonContainer = styled.div`
         font-size: 22px;
         border-radius: 8px;
         padding: .65rem;
-        opacity: .7;
+        opacity: .75;
         transition: all .2s ease;
-        background-color: ${({ theme }) => theme.backgroundColors.darkSide};
+        background-color: ${({ theme }) => theme.backgroundColors.lightBackground};
+        box-shadow: -1px 1px 3px rgb(0 0 0 / 30%);
     }
     .button:hover{
         opacity: 1;
@@ -65,6 +66,7 @@ export const ThemesButtonContainer = styled.div`
         background-color: ${({ theme }) => theme.backgroundColors.lightBackground};
         animation-duration: 0.6s;
         animation-fill-mode: forwards;
+        box-shadow: -1px 1px 3px rgb(0 0 0 / 30%);
         visibility: hidden;
 
         .heading{

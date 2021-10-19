@@ -2,11 +2,23 @@ import {ThemesButtonContainer} from './ThemesButton.styled';
 import {useState, useContext} from 'react';
 import {ThemesContext} from '../../contexts/ThemesContext';
 import {lightPinkTheme} from '../../utils/themes';
-import {darkPinkTheme} from '../../utils/themes';
+import {greenPurpleTheme} from '../../utils/themes';
+import {greenBlueBerryTheme} from '../../utils/themes';
+import {pinkGrayTheme} from '../../utils/themes';
+import {yellowDarkBlueTheme} from '../../utils/themes';
+import {blueGrayTheme} from '../../utils/themes';
+import { beigeGreenTheme} from '../../utils/themes';
+import { purpleDarkBrownTheme} from '../../utils/themes';
 
 const themes = [
     lightPinkTheme,
-    darkPinkTheme
+    beigeGreenTheme,
+    blueGrayTheme,
+    yellowDarkBlueTheme,
+    greenPurpleTheme,
+    greenBlueBerryTheme,
+    pinkGrayTheme,
+    purpleDarkBrownTheme
 ]
 
 export const ThemesButton = () => {

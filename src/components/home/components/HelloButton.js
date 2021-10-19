@@ -24,7 +24,7 @@ export const HelloButton = () => {
 
     return(
         <HelloButtonContainer data-testid="hello-button">
-            <p onClick={displayMessageBox} className="hello-btn" >Hello there!</p>
+            <p onClick={displayMessageBox} className="hello-btn" >Hello there<span>!</span></p>
 
             {/* MESSAGE BOX */}
             <div 

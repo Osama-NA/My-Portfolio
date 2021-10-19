@@ -17,6 +17,7 @@ export const IconLinksContainer = styled.div`
         background-color: ${({ theme }) => theme.backgroundColors.lightBackground};
     }
     a{
+        z-index: 2;
         i{
             opacity: .85;
             font-size: 38px;
