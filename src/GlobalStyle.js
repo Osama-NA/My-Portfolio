@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         justify-content: center;
         width: 100vw;
         height: 100vh;
+
         background: linear-gradient(
             45deg, 
             ${({ theme }) => theme.backgroundColors.darkSide} 50%, 

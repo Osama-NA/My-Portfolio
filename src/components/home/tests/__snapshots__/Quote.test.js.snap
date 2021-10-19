@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote component tests Quote component matches snapshot 1`] = `
+<div
+  className="sc-bdfBQB duMjGC"
+  data-testid="quote"
+>
+  <i
+    className="fas fa-quote-left quote"
+  />
+  <p
+    className="learn"
+  >
+    
+    _
+    <span
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      .
+    </span>
+  </p>
+  <p
+    className="develop"
+  >
+    
+    
+    <span
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      .
+    </span>
+  </p>
+  <p
+    className="mac"
+  >
+    
+    
+    <span
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      .
+    </span>
+  </p>
+</div>
+`;

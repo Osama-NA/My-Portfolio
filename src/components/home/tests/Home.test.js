@@ -50,6 +50,16 @@ describe("Home component tests", () => {
         expect(getByTestId('home')).toContainElement(getByTestId('info'));
     })
 
+    it("Home component contains Quote component", () =>{
+        const { getByTestId } = render(<HomeComponent />);
+        expect(getByTestId('home')).toContainElement(getByTestId('quote'));
+    })
+
+    it("Home component contains IconLinks component", () =>{
+        const { getByTestId } = render(<HomeComponent />);
+        expect(getByTestId('home')).toContainElement(getByTestId('icon-links'));
+    })
+
     it("Home component matches snapshot", () => {
         const tree = renderer.create(<HomeComponent />).toJSON();
         expect(tree).toMatchSnapshot();

@@ -9,6 +9,7 @@ export const IconLinksContainer = styled.div`
     justify-content: center;
     margin-bottom: 2rem;
 
+    //small circles beside git icon
     .circle{
         width: 8.5px;
         height: 8.5px;
@@ -16,6 +17,7 @@ export const IconLinksContainer = styled.div`
         margin: 0 1rem;
         background-color: ${({ theme }) => theme.backgroundColors.lightBackground};
     }
+    //git icon
     a{
         z-index: 2;
         i{

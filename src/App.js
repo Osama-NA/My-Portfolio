@@ -15,6 +15,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <AppContainer>
+        
         <BrowserRouter basename="Router">
           <Switch>
             <Route path="/" exact>
@@ -26,9 +27,13 @@ function App() {
             </Route>
           </Switch>
         </BrowserRouter>
+
+        {/* Theme settings button */}
         <ThemesButton />
         <GlobalStyle />
       </AppContainer>
+
+      {/* Stars particles background  */}
       <BackgroundParticles />
     </ThemeProvider>
   );

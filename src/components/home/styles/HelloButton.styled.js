@@ -35,6 +35,7 @@ export const HelloButtonContainer = styled.div`
     }
   }
 
+  // HELLO THERE BUTTON
   .hello-btn {
     font-size: 24px;
     font-weight: 300;
@@ -47,6 +48,8 @@ export const HelloButtonContainer = styled.div`
       color: ${({ theme }) => theme.themeColors.mainColor};
     }
   }
+  
+  // VIEW PROJECTS MESSAGE BOX
   .message-box {
     display: flex;
     flex-direction: row;
@@ -75,6 +78,8 @@ export const HelloButtonContainer = styled.div`
       padding-bottom: .2rem;
       text-decoration: none;
     }
+    
+    // BUTTON TO CLOSE MESSAGE BOX
     i {
       cursor: pointer;
       font-size: 17px;

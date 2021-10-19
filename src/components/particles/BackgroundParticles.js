@@ -7,16 +7,15 @@ export const BackgroundParticles = () => {
     const [canvasStyle, setCanvasStyle] = useState({ display: "none" })
 
     useEffect(() => {
-        setTimeout(() => {
-            const style = {
-                position: "absolute",
-                top: "0",
-                left: "0",
-                zIndex: "-1"
-            }
-            setCanvasStyle(style);
-        }, 2000);
-    });
+        //setting particles to be at the very background behind all elements
+        const style = {
+            position: "absolute",
+            top: "0",
+            left: "0",
+            zIndex: "-2"
+        }
+        setCanvasStyle(style);
+    }, []);
 
     return (
         <Particles
@@ -37,11 +36,11 @@ export const BackgroundParticles = () => {
                         }
                     },
                     "size": {
-                        "value": 1.5,
+                        "value": 1.5, //stars size
                         "random": true,
                         "anim": {
                             "enable": true,
-                            "speed": 2
+                            "speed": 2 
                         }
                     },
                     "line_linked": {
@@ -49,8 +48,8 @@ export const BackgroundParticles = () => {
                     },
                     "move": {
                         "enable": true,
-                        "speed": 0.8,
-                        "direction": "right",
+                        "speed": 0.8, //movement speed to right
+                        "direction": "right", //to allow the stars to move right
                         "random": true,
                         "straight": false,
                         "out_mode": "out"

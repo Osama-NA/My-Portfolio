@@ -2,70 +2,34 @@
 
 exports[`Home component tests Home component matches snapshot 1`] = `
 <div
-  className="sc-bdfBQB epEUgK"
+  className="sc-bdfBQB hkSzxi"
   data-testid="home"
 >
   <div
-    className="designs-container"
+    className="sc-gsTEea fAENDI"
+    data-testid="threed-cubes"
   >
     <div
-      className="sc-gsTEea KETHo"
-      data-testid="threed-cubes"
+      style={
+        Object {
+          "height": "100%",
+          "overflow": "hidden",
+          "position": "relative",
+          "width": "100%",
+        }
+      }
     >
-      <div
+      <canvas
         style={
           Object {
-            "height": "100%",
-            "overflow": "hidden",
-            "position": "relative",
-            "width": "100%",
+            "display": "block",
           }
         }
-      >
-        <canvas
-          style={
-            Object {
-              "display": "block",
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="sc-dlfnuX douitY"
-      data-testid="hello-button"
-    >
-      <p
-        className="hello-btn"
-        onClick={[Function]}
-      >
-        Hello there!
-      </p>
-      <div
-        className="message-box"
-        data-testid="message-box"
-        style={Object {}}
-      >
-        <p>
-          Don’t waste your time clicking a hello text,
-          <br />
-          <a
-            data-testid="message-box-link"
-            href="/Router/Projects"
-            onClick={[Function]}
-          >
-            view my work here.
-          </a>
-        </p>
-        <i
-          className="fas fa-times close-btn"
-          onClick={[Function]}
-        />
-      </div>
+      />
     </div>
   </div>
   <main
-    className="sc-hKgJUU PZkbk"
+    className="sc-hKgJUU kbaOCY"
     data-testid="info"
   >
     <h1>
@@ -89,20 +53,20 @@ exports[`Home component tests Home component matches snapshot 1`] = `
         </li>
         <li>
           <a
-            data-testid="contacts-link"
-            href="/Router/Contacts"
-            onClick={[Function]}
-          >
-            Contact me
-          </a>
-        </li>
-        <li>
-          <a
             data-testid="about-link"
             href="/Router/About"
             onClick={[Function]}
           >
             About me
+          </a>
+        </li>
+        <li>
+          <a
+            data-testid="contacts-link"
+            href="/Router/Contacts"
+            onClick={[Function]}
+          >
+            Contact me
           </a>
         </li>
       </ul>
@@ -137,7 +101,8 @@ exports[`Home component tests Home component matches snapshot 1`] = `
   </main>
   <footer>
     <div
-      className="sc-eCstlR bYgCvX"
+      className="sc-eCstlR iLALvo"
+      data-testid="quote"
     >
       <i
         className="fas fa-quote-left quote"
@@ -189,12 +154,14 @@ exports[`Home component tests Home component matches snapshot 1`] = `
       </p>
     </div>
     <div
-      className="sc-jSgvzq eGTnut"
+      className="sc-jSgvzq kYnxPx"
+      data-testid="icon-links"
     >
       <div
         className="circle"
       />
       <a
+        data-testid="github-link"
         href="https://github.com/Osama-NA"
         rel="noopener noreferrer"
         target="_blank"
@@ -204,8 +171,42 @@ exports[`Home component tests Home component matches snapshot 1`] = `
         />
       </a>
       <div
-        className="circle"
+        className="circle circle-2"
       />
+    </div>
+    <div
+      className="sc-dlfnuX kBkgsx"
+      data-testid="hello-button"
+    >
+      <p
+        className="hello-btn"
+        onClick={[Function]}
+      >
+        Hello there
+        <span>
+          !
+        </span>
+      </p>
+      <div
+        className="message-box"
+        data-testid="message-box"
+        style={Object {}}
+      >
+        <p>
+          Don’t waste your time clicking a hello text,
+          <a
+            data-testid="message-box-link"
+            href="/Router/Projects"
+            onClick={[Function]}
+          >
+             view my work here.
+          </a>
+        </p>
+        <i
+          className="fas fa-times close-btn"
+          onClick={[Function]}
+        />
+      </div>
     </div>
   </footer>
 </div>

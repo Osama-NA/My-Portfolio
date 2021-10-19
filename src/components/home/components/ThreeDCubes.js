@@ -7,7 +7,7 @@ export const ThreeDCubes = ({ cubesColor }) => {
     return (
         <ThreeDCubesContainer data-testid="threed-cubes" >
             <Suspense fallback={null}>
-                <Canvas colorManagement camera={{ position: [0.0001, -0.0001, 5.7] }}>
+                <Canvas colorManagement camera={{ position: [0.0001, -0.0001, 5.7] }}> {/* canvas camera adjustment using camera position attribute */}
 
                     {/* LIGHTING */}
                     <pointLight position={[10, 0, 0]} intensity={.7} />

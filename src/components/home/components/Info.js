@@ -17,6 +17,7 @@ export const Info = ({circleBackground}) => {
                 </ul>
             </nav>
 
+            {/* 3D SPHERE CONTAINER */}
             <GlobeContainer circleBackground={circleBackground} />
         </InfoContainer>
     )

@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemesButton component tests ThemesButton component matches snapshot 1`] = `
+<div
+  className="sc-bdfBQB frVean themes-button"
+  data-testid="themes-button-container"
+>
+  <i
+    className="fas fa-cog button"
+    data-testid="themes-button"
+    onClick={[Function]}
+  />
+   
+  <div
+    className="themes-container"
+    data-testid="themes-container"
+    style={Object {}}
+  >
+    <div
+      className="heading"
+    >
+      <p>
+        Select a theme
+      </p>
+      <i
+        className="fas fa-times close-btn"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="themes"
+      data-testid="themes"
+    >
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #ffaaa5 50%,
+                        #363062 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #FAB09B 50%,
+                        #004D4D 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #657CF0 50%,
+                        #36373D 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #F2F270 50%,
+                        #2F3673 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #54EBA0 50%,
+                        #491D4D 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #FF004B 50%,
+                        #36373D 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #FF7A89 50%,
+                        #313138 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+      <div
+        className="colored-button"
+        data-testid="theme"
+        onClick={[Function]}
+        style={
+          Object {
+            "border": "none",
+          }
+        }
+      >
+        <div
+          className="selected"
+          style={
+            Object {
+              "background": "linear-gradient(45deg,
+                        #B15EFF 50%,
+                        #453B3B 50.1%
+                    )",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

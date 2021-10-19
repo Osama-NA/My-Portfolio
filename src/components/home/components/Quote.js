@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import {QuoteContainer} from '../styles/Quote.styled';
 
+// STRINGS USED TO TYPE THE QUOTE USING TYPE WRITER ANIMATION
 const LEARN = "Learn";
 const DEVELOP = "Develop";
 const MAC = "Make a change";
 
-const size = (str) => str.length;
+const size = (str) => str.length; 
 
 export const Quote = () => {
 
     const [learn, setLearn] = useState("");
     const [develop, setDevelop] = useState("");
     const [mac, setMac] = useState("");
-    const [learnIndex, setLearnIndex] = useState(0);
-    const [developIndex, setDevelopIndex] = useState(0);
-    const [macIndex, setMacIndex] = useState(0);
-    const [index, setIndex] = useState(0);
+    const [learnIndex, setLearnIndex] = useState(0); // to track 'learn' index
+    const [developIndex, setDevelopIndex] = useState(0); // to track 'develop' index
+    const [macIndex, setMacIndex] = useState(0); // to track 'make a change' index
+    const [index, setIndex] = useState(0); // to track quote index
 
     // on render type text at speed 100ms/s
     useEffect(() => setTimeout(typeText, 100));
@@ -76,7 +77,7 @@ export const Quote = () => {
     }
 
     return (
-        <QuoteContainer>
+        <QuoteContainer data-testid="quote">
             <i className="fas fa-quote-left quote"></i>
             <p className="learn">
                 {learn}{getCursorCondition(LEARN)}

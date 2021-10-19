@@ -20,7 +20,7 @@ export const Cube = ({position, color}) => {
             args={[1.5, 1.5, scaledOut?2.5:1.5]} //On click scales z axis out and in
             position={position} 
             radius={0.25} 
-            onClick={scaleOut}
+            onClick={scaleOut} // on click set 'scaledOut' state to scale z axis of current cube
             ref={ref} 
         >
             <meshPhongMaterial attach="material" color={color?color:'black'} />

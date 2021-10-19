@@ -11,6 +11,7 @@ export const InfoContainer = styled.main`
     justify-content: center;
     align-items: center;
     z-index: 0;
+    text-align: center;
 
     // Remove text select in this element to allow better orbit control to the globe
     -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -18,6 +19,7 @@ export const InfoContainer = styled.main`
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;  
 
+    // NAME
     h1{
         color: ${({ theme }) => theme.themeColors.mainColor};
         font-size: 54px;
@@ -26,12 +28,14 @@ export const InfoContainer = styled.main`
         letter-spacing: 2.5px;
         text-shadow: -1px 1px 4px rgb(0 0 0 / 70%);
     }
+    // TITLE
     h3{
         font-size: 34px;0.5
         font-weight: 600;
         letter-spacing: 2px;
         margin: .5rem;
     }
+    // LINKS
     nav{
         ul{
             display: flex;
@@ -65,6 +69,7 @@ export const InfoContainer = styled.main`
             }
         }
     }
+    // Globe background circle
     .globe-container{
         position: absolute;
         display: flex;
@@ -76,6 +81,7 @@ export const InfoContainer = styled.main`
         border-radius: 50%;
         z-index: -1;
 
+        // Globe
         .globe{
             cursor: pointer;
             width: 350px;

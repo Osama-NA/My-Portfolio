@@ -2,7 +2,7 @@
 
 exports[`ThreeDCubes component tests Cube component matches snapshot 1`] = `
 <div
-  className="sc-bdfBQB cDGIPo"
+  className="sc-bdfBQB eXtUMo"
   data-testid="threed-cubes"
 >
   <div
@@ -28,7 +28,7 @@ exports[`ThreeDCubes component tests Cube component matches snapshot 1`] = `
 
 exports[`ThreeDCubes component tests ThreeDCubes component matches snapshot 1`] = `
 <div
-  className="sc-bdfBQB cDGIPo"
+  className="sc-bdfBQB eXtUMo"
   data-testid="threed-cubes"
 >
   <div

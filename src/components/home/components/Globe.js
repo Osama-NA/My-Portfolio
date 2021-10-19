@@ -12,8 +12,8 @@ export const Globe = ({circleBackground}) => {
     return (
         <>
             <mesh ref={meshRef}>
-                <Sphere args={[2.65, 25]}> 
-                    <meshStandardMaterial color={circleBackground}  wireframe />
+                <Sphere args={[2.65, 25]}> {/* args attribute is used to change sphere size */}
+                    <meshStandardMaterial color={circleBackground} wireframe /> {/* wireframe attribute is used to show sphere wireframe structure  */}
                 </Sphere>
             </mesh>
         </>

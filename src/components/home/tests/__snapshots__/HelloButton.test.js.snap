@@ -2,14 +2,17 @@
 
 exports[`HelloButton component tests HelloButton component matches snapshot 1`] = `
 <div
-  className="sc-bdfBQB fjgBPo"
+  className="sc-bdfBQB cGRXVN"
   data-testid="hello-button"
 >
   <p
     className="hello-btn"
     onClick={[Function]}
   >
-    Hello there!
+    Hello there
+    <span>
+      !
+    </span>
   </p>
   <div
     className="message-box"
@@ -18,13 +21,12 @@ exports[`HelloButton component tests HelloButton component matches snapshot 1`] 
   >
     <p>
       Don’t waste your time clicking a hello text,
-      <br />
       <a
         data-testid="message-box-link"
         href="/Router/Projects"
         onClick={[Function]}
       >
-        view my work here.
+         view my work here.
       </a>
     </p>
     <i

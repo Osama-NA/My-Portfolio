@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconLinks component tests IconLinks component matches snapshot 1`] = `
+<div
+  className="sc-bdfBQB djNWSz"
+  data-testid="icon-links"
+>
+  <div
+    className="circle"
+  />
+  <a
+    data-testid="github-link"
+    href="https://github.com/Osama-NA"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <i
+      className="fab fa-github"
+    />
+  </a>
+  <div
+    className="circle circle-2"
+  />
+</div>
+`;

@@ -2,7 +2,7 @@
 
 exports[`Info component tests Info component matches snapshot 1`] = `
 <main
-  className="sc-bdfBQB jxlHTn"
+  className="sc-bdfBQB kdrJWn"
   data-testid="info"
 >
   <h1>
@@ -26,20 +26,20 @@ exports[`Info component tests Info component matches snapshot 1`] = `
       </li>
       <li>
         <a
-          data-testid="contacts-link"
-          href="/Router/Contacts"
-          onClick={[Function]}
-        >
-          Contact me
-        </a>
-      </li>
-      <li>
-        <a
           data-testid="about-link"
           href="/Router/About"
           onClick={[Function]}
         >
           About me
+        </a>
+      </li>
+      <li>
+        <a
+          data-testid="contacts-link"
+          href="/Router/Contacts"
+          onClick={[Function]}
+        >
+          Contact me
         </a>
       </li>
     </ul>
