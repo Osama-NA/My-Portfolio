@@ -33,8 +33,8 @@ export const HelloButton = () => {
                 style={messageBoxStyle}
             >
                 <p>
-                    Don’t waste your time clicking a hello text,<br />
-                    <Link to="/Router/Projects" data-testid="message-box-link">view my work here.</Link>
+                    Don’t waste your time clicking a hello text, 
+                    <Link to="/Router/Projects" data-testid="message-box-link"> view my work here.</Link>
                 </p>
 
                 {/* CLOSE BUTTON */}

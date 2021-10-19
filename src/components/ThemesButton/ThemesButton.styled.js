@@ -96,7 +96,7 @@ export const ThemesButtonContainer = styled.div`
             }
         }
         .themes{
-            width: 243px;
+            width: 222px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -104,8 +104,8 @@ export const ThemesButtonContainer = styled.div`
 
             .colored-button{
                 cursor: pointer;
-                width: 46px;
-                height: 46px;
+                width: 41px;
+                height: 41px;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
@@ -113,15 +113,54 @@ export const ThemesButtonContainer = styled.div`
                 margin: .2rem;
 
                 .selected{
-                    width: 30px;
-                    height: 30px;
+                    width: 25px;
+                    height: 25px;
                     border-radius: 50%;
                     padding: .5rem;
-                    // background: linear-gradient(
-                    //     45deg,
-                    //     ${({ theme }) => theme.themeColors.mainColor} 50%, 
-                    //     ${({ theme }) => theme.backgroundColors.lightSide} 50.1%
-                    // );
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        top: 1rem;
+        right: 1rem;
+
+        .button{
+            font-size: 16px;
+            padding: .5rem;
+            border-radius: 6px;
+        }
+
+        .themes-container{
+            margin-top: 1rem;
+            border-radius: 8px;
+
+            .heading{
+                padding: .4rem .8rem;
+
+                p{
+                    font-size: 12px;
+                    font-weight: 200;
+                }
+                i{
+                    font-size: 12px;
+                }
+            }
+            .themes{
+                width: 155px;
+                padding: .4rem;
+
+                .colored-button{
+                    width: 30px;
+                    height: 30px;
+                    margin: .15rem;
+
+                    .selected{
+                        width: 18px;
+                        height: 18px;
+                        padding: .4rem;
+                    }
                 }
             }
         }

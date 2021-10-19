@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AppContainer } from './App.styled.js';
 import { ThemesContext } from './contexts/ThemesContext';
 import { ThemesButton } from './components/ThemesButton/ThemesButton';
+import { BackgroundParticles } from './components/particles/BackgroundParticles'
 import { useContext } from 'react';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <ThemesButton />
         <GlobalStyle />
       </AppContainer>
+      <BackgroundParticles />
     </ThemeProvider>
   );
 }

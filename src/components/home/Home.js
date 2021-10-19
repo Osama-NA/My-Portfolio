@@ -7,7 +7,6 @@ import {Quote} from './components/Quote';
 import { IconLinks } from './components/IconLinks';
 
 export const Home = ({cubesColor, circleBackground}) => {
-    
     return (
         <HomeContainer data-testid="home">
             <ThreeDCubes cubesColor={cubesColor} />

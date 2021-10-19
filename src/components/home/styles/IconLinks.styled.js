@@ -32,4 +32,32 @@ export const IconLinksContainer = styled.div`
             text-shadow: none;
         }
     }
+
+    @media (max-width: 768px) {
+        position: relative;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 0;
+        padding-right: 1.1rem;
+        padding-bottom: 1.1rem;
+
+        .circle, .circle-2{
+            background-color: ${({ theme }) => theme.themeColors.mainColor};
+            position: absolute;
+            width: 7.5px;
+            height: 7.5px;
+            bottom: 3.6rem;
+            right: .7rem;
+        }
+        .circle-2{
+            position: absolute;
+            bottom: 1.8rem;
+            right: 2.6rem;
+        }
+        a{
+            i{
+                font-size: 28px;
+            }
+        }
+    }
 `

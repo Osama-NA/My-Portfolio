@@ -8,7 +8,7 @@ export const IconLinks = () => {
             <a href="https://github.com/Osama-NA" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
             </a>
-            <div className="circle"></div>
+            <div className="circle circle-2"></div>
         </IconLinksContainer>
     )
 }

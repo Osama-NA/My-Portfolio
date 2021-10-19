@@ -5,7 +5,6 @@ export const HomeContainer = styled.div`
     width: 100vw;
     height: 100vh;
     max-width: 1550px;
-    max-height: 950px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +12,7 @@ export const HomeContainer = styled.div`
     
     footer{
         width: 100%;
-        min-height: 100px;
+        min-height: 60px;
         position: absolute;
         bottom: 0;
         left: 0; 

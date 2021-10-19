@@ -9,4 +9,9 @@ export const ThreeDCubesContainer = styled.div`
   top: 0px;
   left: 0px;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    width: 125px;
+    height: 125px;
+  }
 `

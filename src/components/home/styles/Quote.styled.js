@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 export const QuoteContainer = styled.div`
     position: relative;
-    width: 30%;
+    min-width: 30%;
     height: 100px;
     margin: 2rem;
+    align-self: flex-end;
+    z-index: -1;
 
     .quote{
         color: ${({ theme }) => theme.themeColors.mainColor };
@@ -32,5 +34,29 @@ export const QuoteContainer = styled.div`
     }
     .mac{
         top: 75px;
+    }
+
+    @media (max-width: 768px) {
+        height: 60px;
+        min-width: 140px;
+        margin: 1rem;
+
+        .quote{
+            font-size: 14px;
+            top: -20px;
+        }
+        p{
+            position:absolute;
+            font-size: 14px;
+        }
+        .learn{
+            top: 0px;
+        }
+        .develop{
+            top: 20px;
+        }
+        .mac{
+            top: 40px;
+        }
     }
 `

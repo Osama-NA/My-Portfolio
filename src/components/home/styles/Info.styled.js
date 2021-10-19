@@ -87,4 +87,38 @@ export const InfoContainer = styled.main`
             opacity: 0.25;
         }
     }
+
+    @media (max-width: 768px) {
+        min-height: 250px;
+
+        h1{
+            font-size: 32px;
+            margin: .2rem;
+        }
+        h3{
+            font-size: 22px;
+            margin: .2rem;
+        }
+        nav{
+            ul{
+                margin: .8rem;
+
+                li{
+                    a{
+                        font-size: 10px;
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
+        .globe-container{
+            width: 300px;
+            height: 300px;
+
+            .globe{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
 `

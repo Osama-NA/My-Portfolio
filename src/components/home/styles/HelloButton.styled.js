@@ -88,4 +88,8 @@ export const HelloButtonContainer = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
