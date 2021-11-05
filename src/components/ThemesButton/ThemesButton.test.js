@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { ThemesButton } from './ThemesButton.js';
 import { ColoredButton } from './ColoredButton.js';
 import { cleanup, render } from '@testing-library/react';
-import { lightPinkTheme } from '../../utils/themes.js';
+import { greenGrayTheme } from '../../utils/themes.js';
 
 afterEach(cleanup);
 
@@ -13,7 +13,7 @@ describe("ThemesButton component tests", () => {
 
     const ThemesButtonComponent = () => {
         return (
-            <ThemeProvider theme={lightPinkTheme}>
+            <ThemeProvider theme={greenGrayTheme}>
                 <ThemesButton />
             </ThemeProvider>
         )
@@ -21,8 +21,8 @@ describe("ThemesButton component tests", () => {
     
     const ColoredButtonComponent = () => {
         return (
-            <ThemeProvider theme={lightPinkTheme}>
-                <ColoredButton thisTheme={lightPinkTheme} />
+            <ThemeProvider theme={greenGrayTheme}>
+                <ColoredButton thisTheme={greenGrayTheme} />
             </ThemeProvider>
         )
     }

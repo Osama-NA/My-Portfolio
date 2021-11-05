@@ -1,5 +1,5 @@
 import {createContext, useReducer} from 'react';
-import { lightPinkTheme } from '../utils/themes'; //used as the initial theme
+import { blueishPurpleGrayTheme } from '../utils/themes'; //used as the initial theme
 
 const themeReducer = (state, action) => {
     switch (action.type) {
@@ -10,10 +10,10 @@ const themeReducer = (state, action) => {
     }
 }
 
-export const ThemesContext = createContext(lightPinkTheme);
+export const ThemesContext = createContext(blueishPurpleGrayTheme);
 
 export const ThemesProvider = ({children}) => {
-    const [state, dispatch] = useReducer(themeReducer, lightPinkTheme);
+    const [state, dispatch] = useReducer(themeReducer, blueishPurpleGrayTheme);
 
     // Context action dispatcher function
     const setTheme = (theme) => dispatch({ type: 'SET_THEME', theme });

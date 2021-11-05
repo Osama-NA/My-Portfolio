@@ -22,7 +22,7 @@ export const BackgroundParticles = () => {
             params={{
                 "particles": {
                     "number": {
-                        "value": window.screen.width > 768 ? 310 : 120 // reduce number of stars to 120 for mobile devices
+                        "value": window.screen.width > 768 ? 290 : 100 // reduce number of stars to 100 for mobile devices
                     },
                     "color": {
                         "value": "#ffffff"

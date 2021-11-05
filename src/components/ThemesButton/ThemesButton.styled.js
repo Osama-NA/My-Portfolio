@@ -15,13 +15,9 @@ export const ThemesButtonContainer = styled.div`
         font-size: 22px;
         border-radius: 8px;
         padding: .65rem;
-        opacity: .75;
         transition: all .2s ease;
         background-color: ${({ theme }) => theme.backgroundColors.lightBackground};
         box-shadow: -1px 1px 3px rgb(0 0 0 / 30%);
-    }
-    .button:hover{
-        opacity: 1;
     }
     .button::after{
         content: '';
@@ -87,12 +83,7 @@ export const ThemesButtonContainer = styled.div`
                 cursor: pointer;
                 font-size: 17px;
                 color: ${({ theme }) => theme.themeColors.mainColor};
-                text-shadow: -1px 1px 3px rgb(0 0 0 / 30%);
-                opacity: 0.8;
                 transition: all 0.1s ease;
-            }
-            i:hover {
-                opacity: 1;
             }
         }
         .themes{

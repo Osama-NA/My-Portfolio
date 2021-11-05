@@ -1,24 +1,22 @@
 import {ThemesButtonContainer} from './ThemesButton.styled';
 import {useState} from 'react';
 import {ColoredButton} from './ColoredButton';
-import {lightPinkTheme} from '../../utils/themes';
-import {greenPurpleTheme} from '../../utils/themes';
-import {greenBlueBerryTheme} from '../../utils/themes';
 import {pinkGrayTheme} from '../../utils/themes';
-import {yellowDarkBlueTheme} from '../../utils/themes';
-import {blueGrayTheme} from '../../utils/themes';
-import { beigeGreenTheme} from '../../utils/themes';
-import { purpleDarkBrownTheme} from '../../utils/themes';
+import {lightBlueGrayTheme} from '../../utils/themes';
+import {purpleGrayTheme} from '../../utils/themes';
+import {yellowGrayTheme} from '../../utils/themes';
+import { greenGrayTheme} from '../../utils/themes';
+import { blueishPurpleGrayTheme} from '../../utils/themes';
+import { redGrayTheme} from '../../utils/themes';
 
 const themes = [
-    lightPinkTheme,
-    beigeGreenTheme,
-    blueGrayTheme,
-    yellowDarkBlueTheme,
-    greenPurpleTheme,
-    greenBlueBerryTheme,
+    blueishPurpleGrayTheme,
+    purpleGrayTheme,
     pinkGrayTheme,
-    purpleDarkBrownTheme
+    redGrayTheme,
+    yellowGrayTheme,
+    lightBlueGrayTheme,
+    greenGrayTheme
 ]
 
 export const ThemesButton = () => {

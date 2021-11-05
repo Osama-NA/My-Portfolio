@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 import { IconLinks } from '../components/IconLinks.js';
 import { cleanup, render } from '@testing-library/react';
-import { lightPinkTheme } from '../../../utils/themes.js';
+import { greenGrayTheme } from '../../../utils/themes.js';
 
 afterEach(cleanup);
 
@@ -14,7 +14,7 @@ describe("IconLinks component tests", () => {
     const IconLinksComponent = () => {
         return (
             <BrowserRouter>
-                <ThemeProvider theme={lightPinkTheme}>
+                <ThemeProvider theme={greenGrayTheme}>
                     <IconLinks/>
                 </ThemeProvider>
             </BrowserRouter>

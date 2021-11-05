@@ -42,7 +42,7 @@ export const HelloButtonContainer = styled.div`
     cursor: pointer;
     padding: 2rem 0;
     color: ${({ theme }) => theme.fontColors.secondary};
-    text-shadow: -1px 1px 3px rgb(0 0 0 / 60%);
+    letter-spacing: 1px;
 
     span{
       color: ${({ theme }) => theme.themeColors.mainColor};
@@ -51,6 +51,7 @@ export const HelloButtonContainer = styled.div`
   
   // VIEW PROJECTS MESSAGE BOX
   .message-box {
+    width: 50ch;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -69,7 +70,6 @@ export const HelloButtonContainer = styled.div`
       font-weight: 200;
       padding-right: 3rem;
       letter-spacing: .8px;
-      text-shadow: -1px 1px 3px rgb(0 0 0 / 40%);
     }
     a {
       color: ${({ theme }) => theme.themeColors.mainColor};
@@ -85,12 +85,7 @@ export const HelloButtonContainer = styled.div`
       font-size: 17px;
       align-self: center;
       color: ${({ theme }) => theme.themeColors.mainColor};
-      opacity: 0.8;
-      text-shadow: -1px 1px 3px rgb(0 0 0 / 30%);
       transition: all 0.1s ease;
-    }
-    i:hover {
-      opacity: 1;
     }
   }
 

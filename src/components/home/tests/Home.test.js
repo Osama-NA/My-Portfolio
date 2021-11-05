@@ -5,7 +5,7 @@ import { Home } from '../Home.js';
 import {ThemeProvider} from 'styled-components';
 import {BrowserRouter} from 'react-router-dom';
 import { cleanup, render } from '@testing-library/react';
-import { lightPinkTheme } from '../../../utils/themes.js';
+import { greenGrayTheme } from '../../../utils/themes.js';
 
 afterEach(cleanup);
 
@@ -14,9 +14,9 @@ describe("Home component tests", () => {
     const HomeComponent = () => {
         return (
             <BrowserRouter>
-                <ThemeProvider theme={lightPinkTheme}>
+                <ThemeProvider theme={greenGrayTheme}>
                     <Home 
-                        theme={lightPinkTheme}
+                        theme={greenGrayTheme}
                         cubesColor="lightpink" 
                         circleBackground="lightblue"
                     />

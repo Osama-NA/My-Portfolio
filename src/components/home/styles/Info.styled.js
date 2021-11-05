@@ -21,12 +21,12 @@ export const InfoContainer = styled.main`
 
     // NAME
     h1{
+        text-transform: uppercase;
         color: ${({ theme }) => theme.themeColors.mainColor};
-        font-size: 54px;
-        font-weight: bolder;
-        margin: .5rem;
+        font-family: 'Jaldi', sans-serif;
+        font-size: 60px;
+        font-weight: 700;
         letter-spacing: 2.5px;
-        text-shadow: -1px 1px 4px rgb(0 0 0 / 70%);
     }
     // TITLE
     h3{
@@ -34,6 +34,7 @@ export const InfoContainer = styled.main`
         font-weight: 600;
         letter-spacing: 2px;
         margin: .5rem;
+        margin-top: 0;
     }
     // LINKS
     nav{
@@ -55,7 +56,6 @@ export const InfoContainer = styled.main`
                     text-transform: uppercase;
                     padding-right: 1rem;
                     letter-spacing: 1.5px;
-                    text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
                     transition: all .3s ease;
                 }
                 a:hover{
@@ -98,16 +98,15 @@ export const InfoContainer = styled.main`
         min-height: 250px;
 
         h1{
-            font-size: 32px;
-            margin: .2rem;
+            font-size: 36px;
         }
         h3{
-            font-size: 22px;
+            font-size: 21px;
             margin: .2rem;
         }
         nav{
             ul{
-                margin: .8rem;
+                margin: .5rem;
 
                 li{
                     a{
