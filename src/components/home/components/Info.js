@@ -11,9 +11,9 @@ export const Info = ({circleBackground}) => {
 
             <nav>
                 <ul data-testid="nav-bar">
-                    <li><Link to="/Router/Projects" data-testid="projects-link">Projects</Link></li>
-                    <li><Link to="/Router/About" data-testid="about-link">About me</Link></li>
-                    <li><Link to="/Router/Contacts" data-testid="contacts-link">Contact me</Link></li>
+                    <li><Link to="/Projects" data-testid="projects-link">Projects</Link></li>
+                    <li><Link to="/About" data-testid="about-link">About me</Link></li>
+                    <li><Link to="/Contact" data-testid="contacts-link">Contact me</Link></li>
                 </ul>
             </nav>
 

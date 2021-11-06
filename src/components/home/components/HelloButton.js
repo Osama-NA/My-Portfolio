@@ -34,7 +34,7 @@ export const HelloButton = () => {
             >
                 <p>
                     Don’t waste your time clicking a hello text, 
-                    <Link to="/Router/Projects" data-testid="message-box-link"> view my work here.</Link>
+                    <Link to="/Projects" data-testid="message-box-link"> view my work here.</Link>
                 </p>
 
                 {/* CLOSE BUTTON */}

@@ -1,6 +1,7 @@
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components'
 import { Home } from './components/home/Home.js';
+import { Contact } from './components/pages/contact/Contact.js';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AppContainer } from './App.styled.js';
 import { ThemesContext } from './contexts/ThemesContext';
@@ -25,6 +26,7 @@ function App() {
                 circleBackground={theme.circleBackground}
               />
             </Route>
+            <Route path="/Contact" component={Contact} />
           </Switch>
         </BrowserRouter>
 
