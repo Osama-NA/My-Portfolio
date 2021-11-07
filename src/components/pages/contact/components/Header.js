@@ -24,10 +24,16 @@ export const Header = () => {
 
     // SHOW / HIDE MENU
     const openMenu = () => {
-        setMenuStyle({ display: 'flex' });
+        setMenuStyle({ 
+            display: 'flex',
+            animationName: 'openMenuAnimation'
+         });
     }
     const closeMenu = () => {
-        setMenuStyle({ display: 'none' });
+        setMenuStyle({
+            display: 'flex',
+            animationName: 'closeMenuAnimation'
+        });
     }
 
     // MENU BUTTON ON CLICK ANIMATIONS
@@ -59,7 +65,19 @@ export const Header = () => {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/Projects">Projects</Link></li>
                     <li><Link to="/About">About</Link></li>
-                    <li><Link to="/Contact" className="active-link">Contact</Link></li>
+                    <li className="active-link"><Link to="/Contact">Contact</Link></li>
+                    
+                    <li className="mobile-nav-git-icon">
+                        {/* mini circle beside git icon */}
+                        <div className="circle"></div>
+
+                        <a href="https://github.com/Osama-NA" target="_blank" rel="noopener noreferrer" data-testid="github-link">
+                            <i className="fab fa-github"></i>
+                        </a>
+
+                        {/* mini circle beside git icon */}
+                        <div className="circle circle-2"></div>
+                    </li>
                 </ul>
             </nav>
         </HeaderContainer>

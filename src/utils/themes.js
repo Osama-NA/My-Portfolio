@@ -10,7 +10,8 @@ export const greenGrayTheme = {
     backgroundColors: {
         lightSide: '#313138',
         darkSide: '#242429',
-        lightBackground: '#3F3F47'
+        lightBackground: '#3F3F47',
+        navBackground: '#383840'
     },
     cubesColor: '#03AD78',
     circleBackground: '#313138'
@@ -28,7 +29,8 @@ export const blueishPurpleGrayTheme = {
     backgroundColors: {
         lightSide: '#313138',
         darkSide: '#242429',
-        lightBackground: '#3F3F47'
+        lightBackground: '#3F3F47',
+        navBackground: '#383840'
     },
     cubesColor: '#544DFF',
     circleBackground: '#313138'
@@ -46,7 +48,8 @@ export const purpleGrayTheme = {
     backgroundColors: {
         lightSide: '#313138',
         darkSide: '#242429',
-        lightBackground: '#3F3F47'
+        lightBackground: '#3F3F47',
+        navBackground: '#383840'
     },
     cubesColor: '#9A52DE',
     circleBackground: '#313138'
@@ -64,7 +67,8 @@ export const lightBlueGrayTheme = {
     backgroundColors: {
         lightSide: '#313138',
         darkSide: '#242429',
-        lightBackground: '#3F3F47'
+        lightBackground: '#3F3F47',
+        navBackground: '#383840'
     },
     cubesColor: '#00E6E2',
     circleBackground: '#313138'
@@ -82,7 +86,8 @@ export const yellowGrayTheme = {
     backgroundColors: {
         lightSide: '#313138',
         darkSide: '#242429',
-        lightBackground: '#3F3F47'
+        lightBackground: '#3F3F47',
+        navBackground: '#383840'
     },
     cubesColor: '#F2F208',
     circleBackground: '#313138'
@@ -100,7 +105,8 @@ export const pinkGrayTheme = {
     backgroundColors: {
         lightSide: '#313138',
         darkSide: '#242429',
-        lightBackground: '#3F3F47'
+        lightBackground: '#3F3F47',
+        navBackground: '#383840'
     },
     cubesColor: '#FF558E',
     circleBackground: '#313138'
@@ -118,7 +124,8 @@ export const redGrayTheme = {
     backgroundColors: {
         lightSide: '#313138',
         darkSide: '#242429',
-        lightBackground: '#3F3F47'
+        lightBackground: '#3F3F47',
+        navBackground: '#383840'
     },
     cubesColor: '#FF3142',
     circleBackground: '#313138'

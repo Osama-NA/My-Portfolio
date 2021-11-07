@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    margin: 1.25rem 6.85rem 0 2.5rem;
+    align-items: center;
+    width: 100vw;
+    height: 105px;
+    max-width: 1550px;
+    padding: 0 6.85rem 0 2.5rem;
 
     .logo{
         color: ${({ theme }) => theme.themeColors.mainColor};
@@ -19,6 +23,7 @@ export const HeaderContainer = styled.header`
             letter-spacing: 2.5px;
         }
     }
+
     nav{
         ul{
             display: flex;
@@ -35,20 +40,103 @@ export const HeaderContainer = styled.header`
             a:hover{
                 color: ${({ theme }) => theme.themeColors.mainColor};
             }
+            .mobile-nav-git-icon{
+                display: none;
+            }
         }
-    }
-
-    .active-link{
-        color: ${({ theme }) => theme.themeColors.mainColor};
     }
 
     .menu-button-container{
         display: none;
     }
 
+    .active-link{
+        a{
+            color: ${({ theme }) => theme.themeColors.mainColor};
+        }
+    }
+
     @media (max-width: 767px){
+        height: 65px;
+        padding: 0 4.1rem 0 1.5rem;
+
+        .logo{
+            h1{
+                font-size: 24px;
+            }
+        }
+
+        @keyframes openMenuAnimation{
+            from{
+                opacity: 0;
+                left: -15rem;
+            }
+            to{
+                opacity: 1;
+                left: 0;
+            }
+        }
+        @keyframes closeMenuAnimation{
+            from{
+                opacity: 1;
+                left: 0;
+            }
+            to{
+                opacity: 0;
+                left: -15rem;
+            }
+        }
         nav ul{
             display: none;
+            position: relative;
+            height: 95vh;
+            min-width: 182.5px;
+            position: absolute;
+            flex-direction: column;
+            top: 4rem;
+            left: 0;
+            padding-top: 1rem;
+            border-radius: 0 10px 0 0;
+            background-color: ${({ theme }) => theme.backgroundColors.navBackground};
+            box-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+            animation-duration: .6s;
+            animation-fill-mode: forwards;
+
+            li{
+                width: 100%;
+                padding: .5rem 1.5rem;
+            }
+            a{
+                font-size: 16px;
+                padding-left: 0;
+            }
+            .active-link{
+                border-left: 2.5px solid ${({ theme }) => theme.themeColors.mainColor};
+            }
+            .mobile-nav-git-icon{
+                position: absolute;
+                bottom: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 32px;
+                    text-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
+                    margin: .75rem;
+                }
+                .circle{
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: ${({ theme }) => theme.themeColors.mainColor};
+                    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
+                }
+            }
         }
 
         // NAVIGATION MENU AND BUTTON
@@ -109,6 +197,7 @@ export const HeaderContainer = styled.header`
             }
         }
         .menu-button-container{
+            cursor: pointer;
             display: grid;
             place-items: center;
             width: 32.6px;
@@ -123,6 +212,7 @@ export const HeaderContainer = styled.header`
                 flex-direction: column;
                 width: 16px;
                 height: 14px;
+                z-index: 3;
 
                 .dash{
                     position: absolute;
