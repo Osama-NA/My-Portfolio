@@ -1,11 +1,11 @@
 import React from 'react';
 import { ContactContainer } from './styles/Contact.styled.js';
-import { Header } from './components/Header';
+import { Header } from '../pages_header/Header';
 
 export const Contact = () => {
     return (
         <ContactContainer>
-            <Header />
+            <Header page="Contact" />
         </ContactContainer>
     )
 }

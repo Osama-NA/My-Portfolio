@@ -2,6 +2,8 @@ import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components'
 import { Home } from './components/home/Home.js';
 import { Contact } from './components/pages/contact/Contact.js';
+import { About } from './components/pages/about/About.js';
+import { Projects } from './components/pages/projects/Projects.js';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AppContainer } from './App.styled.js';
 import { ThemesContext } from './contexts/ThemesContext';
@@ -27,6 +29,8 @@ function App() {
               />
             </Route>
             <Route path="/Contact" component={Contact} />
+            <Route path="/About" component={About} />
+            <Route path="/Projects" component={Projects} />
           </Switch>
         </BrowserRouter>
 
