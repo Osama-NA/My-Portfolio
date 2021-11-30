@@ -30,8 +30,8 @@ export const InfoContainer = styled.main`
     }
     // TITLE
     h3{
-        font-size: 34px;0.5
-        font-weight: 600;
+        font-size: 34px;
+        font-weight: 500;
         letter-spacing: 2px;
         margin: .5rem;
         margin-top: 0;
