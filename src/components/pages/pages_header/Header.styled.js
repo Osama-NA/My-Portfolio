@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
     width: 100vw;
     height: 105px;
     max-width: 1550px;
-    padding: 0 6.85rem 0 2.5rem;
+    padding: 0 7.5rem 0 2.75rem;
 
     .logo{
         color: ${({ theme }) => theme.themeColors.mainColor};

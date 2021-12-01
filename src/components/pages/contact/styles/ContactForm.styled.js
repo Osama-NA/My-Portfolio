@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const ContactFormContainer = styled.form`
-
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
     padding: 2rem;
-    background-color: ${({ theme}) => theme.backgroundColors.lightSide};
-    box-shadow: 0px 7.5px 6px 5px rgb(24 24 24 / 25%);
+    background-color: ${({ theme }) => theme.backgroundColors.lightSide};
+    box-shadow: 2px 4px 6px 1px rgb(6 6 6 / 20%);
 
     .form-row{
         display: flex;

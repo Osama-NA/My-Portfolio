@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ThemesButtonContainer = styled.div`
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 2.75rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

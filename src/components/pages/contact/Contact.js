@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import { ContactContainer } from './styles/Contact.styled.js';
 import { Header } from '../pages_header/Header';
 import { ContactForm } from './components/ContactForm';
+import { Socials } from './components/Socials';
 import { EmailSuccessContext} from '../../../contexts/EmailSuccessContext.js';
 
 export const Contact = () => {
@@ -12,12 +13,14 @@ export const Contact = () => {
 
     const closeSuccessMessageContainer = () => setDisplayEmailSuccessMessage({ display: "none" });
 
+    // Displays email success message, when emailSuccessState is set in child component 'ContactForm'
     useEffect(() => {
         if (emailSuccessState) {
             setDisplayEmailSuccessMessage({ display: "grid" });
         }
     }, [emailSuccessState])
 
+    // Hides email success message, when closeSuccessMessageContainer is called
     useEffect(() => {
         setEmailSuccess(false);
     }, [displayEmailSuccessMessage, setEmailSuccess])
@@ -25,7 +28,9 @@ export const Contact = () => {
     return (
             <ContactContainer>
                 <Header page="Contact" />
+
                 <h3 className="contact-heading">Get in touch</h3>
+
                 <main className="contact-container">
                     <div className="contact-form">
                         <h4>
@@ -34,7 +39,15 @@ export const Contact = () => {
                         </h4>
                         <ContactForm />
                     </div>
+                    <div className="contact-socials">
+                        <h4>
+                            <i className="fas fa-hashtag"></i>
+                            Check out my socials
+                        </h4>
+                        <Socials />
+                    </div>
                 </main>
+
                 <div 
                 className="email-success-message-container" 
                 onClick={closeSuccessMessageContainer}
