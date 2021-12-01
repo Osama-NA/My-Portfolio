@@ -36,6 +36,7 @@ export const HeaderContainer = styled.header`
                 font-size: 18px;
                 padding-left: 2rem;
                 transition: all .3s ease;
+                letter-spacing: 1px;
             }
             a:hover{
                 color: ${({ theme }) => theme.themeColors.mainColor};

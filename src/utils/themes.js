@@ -5,7 +5,8 @@ export const greenGrayTheme = {
     },
     fontColors: {
         secondary: '#e0e0e0',
-        primary: '#fff'
+        primary: '#fff',
+        gray: '#5e5e5e'
     },
     backgroundColors: {
         lightSide: '#313138',
@@ -24,7 +25,8 @@ export const blueishPurpleGrayTheme = {
     },
     fontColors: {
         secondary: '#e0e0e0',
-        primary: '#fff'
+        primary: '#fff',
+        gray: '#5e5e5e'
     },
     backgroundColors: {
         lightSide: '#313138',
@@ -43,7 +45,8 @@ export const purpleGrayTheme = {
     },
     fontColors: {
         secondary: '#e0e0e0',
-        primary: '#fff'
+        primary: '#fff',
+        gray: '#5e5e5e'
     },
     backgroundColors: {
         lightSide: '#313138',
@@ -62,7 +65,8 @@ export const lightBlueGrayTheme = {
     },
     fontColors: {
         secondary: '#e0e0e0',
-        primary: '#fff'
+        primary: '#fff',
+        gray: '#5e5e5e'
     },
     backgroundColors: {
         lightSide: '#313138',
@@ -81,7 +85,8 @@ export const yellowGrayTheme = {
     },
     fontColors: {
         secondary: '#e0e0e0',
-        primary: '#fff'
+        primary: '#fff',
+        gray: '#5e5e5e'
     },
     backgroundColors: {
         lightSide: '#313138',
@@ -100,7 +105,8 @@ export const pinkGrayTheme = {
     },
     fontColors: {
         secondary: '#e0e0e0',
-        primary: '#fff'
+        primary: '#fff',
+        gray: '#5e5e5e'
     },
     backgroundColors: {
         lightSide: '#313138',
@@ -119,7 +125,8 @@ export const redGrayTheme = {
     },
     fontColors: {
         secondary: '#e0e0e0',
-        primary: '#fff'
+        primary: '#fff',
+        gray: '#5e5e5e'
     },
     backgroundColors: {
         lightSide: '#313138',

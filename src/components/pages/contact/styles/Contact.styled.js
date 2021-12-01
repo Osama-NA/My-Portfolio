@@ -21,7 +21,8 @@ export const ContactContainer = styled.div`
         position: relative;
         font-size: 26px;
         padding-left: 2.25rem;
-        margin: 2rem 2.7rem;
+        margin: 1.7rem 2.7rem;
+        letter-spacing: 1px;
 
         animation-name: headingAnimation;
         animation-duration: .5s;
@@ -44,6 +45,76 @@ export const ContactContainer = styled.div`
         display: flex;
         flex-direction: row;
         margin: 0 2.7rem;
-        background-color: red;
+
+        @keyframes contactFormAnimation{
+            from{
+                opacity: 0;
+                top: 10rem;
+            }
+            to{
+                opacity: 1;
+                top: 0rem;
+            }
+        }
+        .contact-form{
+            position: relative;
+            margin-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            animation-name: contactFormAnimation;
+            animation-duration: .5s;
+            animation-timing-function: ease-out;
+
+            h4{
+                font-size: 18px;
+                font-weight: 400;
+                margin-left: 2rem;
+                margin-bottom: 1rem;
+                letter-spacing: 1px;
+
+                i{
+                    padding-right: 1rem;
+                    color: ${({ theme }) => theme.themeColors.mainColor};
+                }
+            }
+        }
+    }
+
+    .email-success-message-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        place-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #0000005a;
+        
+        .email-success-message{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 1rem 2rem;
+            background-color: ${({ theme }) => theme.backgroundColors.lightSide};
+            border-radius: 10px;
+            
+            h6{
+                font-size: 18px;
+
+                i{
+                    padding-right: 1rem;
+                    color: ${({ theme }) => theme.themeColors.mainColor};
+                }
+            }
+            p{
+                color: gray;
+                font-size; 16px;
+                font-weight: 400;
+                margin-top: 1rem;
+            }
+        }
     }
 `

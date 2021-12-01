@@ -1,17 +1,26 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useContext, useEffect } from 'react';
 import { ContactFormContainer } from '../styles/ContactForm.styled.js';
 import emailjs from 'emailjs-com';
+import {EmailSuccessContext} from '../../../../contexts/EmailSuccessContext.js';
 
 export const ContactForm = () => {
 
     const contactForm = useRef();
 
+    // EmailSuccessContext is used here to let the parent container know when an email 
+    //has been successfully sent in order to display email success message container
+    const { setEmailSuccess } = useContext(EmailSuccessContext);
+    const [emailSuccessState, setEmailSuccessState] = useState(false);
+
+    //Function to send email to 'my email' using Email.Js
     const sendEmail = (e) => {
         e.preventDefault();
 
         const message = e.target.message.value;
-        if (message.length < 6) {
-            alert("Tell us more . . .");
+
+        //Only send email if message is not less than 8 characters 
+        if (message.length < 8) {
+            alert("Tell me more . . .");
             e.target.reset();
             return;
         }
@@ -22,36 +31,49 @@ export const ContactForm = () => {
             contactForm.current,
             process.env.REACT_APP_EMAILJS_USER_ID
         ).then(() => {
-            alert("Email successfully sent, thank you!");
+            setEmailSuccessState(true);
         }, (error) => {
             alert(error.text);
         });
 
         e.target.reset();
+        return;
     };
+
+    // When email has been successfully sent email success context is set to true 
+    //after setting emailSuccessState in sendEmail function
+    useEffect(() => {
+        if (emailSuccessState) {
+            setEmailSuccess(true);
+        }
+    }, [emailSuccessState, setEmailSuccess]);
 
 
     return (
         <ContactFormContainer ref={contactForm} onSubmit={sendEmail}>
             <div className="form-row">
-                <label>Name :</label>
-                <input type="text" name="name" placeholder="Enter your full name . . ." required />
+                <label>Name</label>
+                <div className="form-row-split-line"></div>
+                <input type="text" name="name" placeholder="Gyōmei Himejima" required />
             </div>
             <div className="form-row">
-                <label>Email :</label>
-                <input type="text" name="email" placeholder="Enter your email . . ." required />
+                <label>Email</label>
+                <div className="form-row-split-line"></div>
+                <input type="text" name="email" placeholder="Gyōmei@gmail.com" required />
             </div>
             <div className="form-row">
-                <label>Subject :</label>
-                <input type="text" name="subject" placeholder="Enter the subject . . ." required />
+                <label>Subject</label>
+                <div className="form-row-split-line"></div>
+                <input type="text" name="subject" placeholder="Web Project . ." required />
             </div>
             <div className="form-row">
-                <label>Message :</label>
-                <textarea name="message" placeholder="Enter the message . . ." required />
+                <label>Message</label>
+                <div className="form-row-split-line"></div>
+                <textarea name="message" placeholder="Hello Osama . ." required />
             </div>
             <div className="form-row-buttons">
                 <button type="reset" className="reset">RESET</button>
-                <button type="submit">SEND<i className="fas fa-paper-plane"></i></button>
+                <button type="submit" className="submit"><i className="fas fa-paper-plane"></i> SEND</button>
             </div>
         </ContactFormContainer>
     )

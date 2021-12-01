@@ -10,6 +10,7 @@ import { ThemesContext } from './contexts/ThemesContext';
 import { ThemesButton } from './components/ThemesButton/ThemesButton';
 import { BackgroundParticles } from './components/particles/BackgroundParticles'
 import { useContext } from 'react';
+import { EmailSuccessProvider } from './contexts/EmailSuccessContext.js';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <AppContainer>
+        <EmailSuccessProvider>
         
         <BrowserRouter basename="Router">
           <Switch>
@@ -37,6 +39,7 @@ function App() {
         {/* Theme settings button */}
         <ThemesButton />
         <GlobalStyle />
+        </EmailSuccessProvider>
       </AppContainer>
 
       {/* Stars particles background  */}
