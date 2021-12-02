@@ -22,6 +22,7 @@ export const ContactContainer = styled.div`
         font-size: 26px;
         padding-left: 2.25rem;
         margin: 1.7rem 2.7rem;
+        margin-top: 125px;
         letter-spacing: 1px;
 
         animation-name: headingAnimation;
@@ -130,6 +131,95 @@ export const ContactContainer = styled.div`
                 font-size; 16px;
                 font-weight: 400;
                 margin-top: 1rem;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .contact-heading{
+            font-size: 22px;
+            padding-left: 1.75rem;
+            margin: 1.2rem 2rem;
+        }
+        .contact-heading::after{
+            width: 4px;
+        }
+        .contact-container{
+            padding: 1.5rem 2rem;
+            .contact-socials, .contact-form{
+                h4{
+                    font-size: 16px;
+                    margin-bottom: .75rem;
+
+                    i{
+                        padding-right: .75rem;
+                        padding-left: 2rem;
+                    }
+                }
+            }
+        }
+
+        .email-success-message-container{
+            .email-success-message{
+                padding: .75rem 1.75rem;
+                
+                h6{
+                    font-size: 16px;
+
+                    i{
+                        padding-right: .75rem;
+                    }
+                }
+                p{
+                    font-size; 14px;
+                    margin-top: .75rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .contact-heading{
+            font-size: 18px;
+            padding-left: 1.5rem;
+            margin: 6.5rem 1.5rem 1rem;
+        }
+        .contact-heading::after{
+            width: 3px;
+        }
+        .contact-container{
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            
+            .contact-form, .contact-socials{
+                width: 100%;
+                h4{
+                    font-size: 16px;
+                    margin-bottom: .5rem;
+
+                    i{
+                        padding-right: .5rem;
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+
+        .email-success-message-container{
+            .email-success-message{
+                padding: .75rem 1.5rem;
+                
+                h6{
+                    font-size: 16px;
+
+                    i{
+                        padding-right: .75rem;
+                    }
+                }
+                p{
+                    font-size; 14px;
+                    margin-top: .75rem;
+                }
             }
         }
     }

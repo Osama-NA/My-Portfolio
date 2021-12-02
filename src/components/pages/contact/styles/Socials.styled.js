@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SocialsContainer = styled.section`
     width: 100%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -77,6 +78,9 @@ export const SocialsContainer = styled.section`
         font-weight: bold;
         height: 42px;
         width: 42px;
+        font-weight: bold;
+        min-height: 42px;
+        min-width: 42px;
         margin: .2rem 0 .2rem 1.5rem;
         background: #d6249f;
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -98,5 +102,75 @@ export const SocialsContainer = styled.section`
     }
     a:nth-child(4){
         animation-delay: .75s;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        a{
+            padding: 1rem .75rem;
+
+            i{
+                font-size: 42px;
+                margin-left: 1rem;
+            }
+            //codewars icon
+            svg{
+                font-size: 36.75px;
+                margin: .15rem 0 .15rem 1rem;
+            }
+            p{
+                font-size: 14px;
+                padding: .25rem 1.5rem;
+            }
+        }
+        a p:nth-child(2){
+            width: 125px;
+            padding-left: 1.5rem;
+            border-right: 1.5px solid #505050;
+        }
+        //instagram icon
+        a:nth-child(3) i{
+            font-size: 26px;
+            height: 36px;
+            width: 36px;
+            min-height: 36px;
+            min-width: 36px;
+            margin: .2rem 0 .2rem 1rem;
+        }
+    }
+    @media (max-width: 767px){
+        height: auto;
+        justify-content: flex-start;
+
+        a{
+            height: 70px;
+            padding: .5rem 1.25rem;
+            margin-bottom: .75rem;
+
+            i{
+                font-size: 42px;
+                margin-left: 0;
+            }
+            svg{
+                font-size: 36.75px;
+                margin: .15rem 0;
+            }
+            p{
+                font-size: 12px;
+                padding: .25rem 1rem;
+            }
+        }
+        a p:nth-child(2){
+            width: 105px;
+            padding-left: 1rem;
+        }
+        //instagram icon
+        a:nth-child(3) i{
+            font-size: 26px;
+            height: 36px;
+            width: 36px;
+            min-height: 36px;
+            min-width: 36px;
+            margin: .2rem 0;
+        }
     }
 `

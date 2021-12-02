@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const ThemesButtonContainer = styled.div`
-    position: absolute;
+    position: fixed;
     top: 2rem;
-    right: 2.75rem;
+    right: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 1;
 
     .button{
         position: relative;
@@ -45,14 +46,14 @@ export const ThemesButtonContainer = styled.div`
     //Used to animate message box from hidden to visible coming from the right side
     @keyframes animateBoxOut {
         0% {
-        opacity: 1;
-        margin-right: 0rem;
-        visibility: visible;
+            opacity: 1;
+            margin-right: 0rem;
+            visibility: visible;
         }
         100% {
-        opacity: 0;
-        margin-right: -30rem;
-        visibility: hidden;
+            opacity: 0;
+            margin-right: -30rem;
+            visibility: hidden;
         }
     }
 
@@ -112,10 +113,45 @@ export const ThemesButtonContainer = styled.div`
             }
         }
     }
+    @media (min-width: 768px) and (max-width: 1200px){
+        top: 1.5rem;
+        right: 2rem;
 
-    @media (max-width: 768px) {
+        .button{
+            font-size: 18px;
+        }
+        .themes-container{
+            margin-top: 2rem;
+
+            .heading{
+                padding: .6rem 1rem .6rem;
+
+                p{
+                    font-size: 15px;
+                }
+                i{
+                    font-size: 15px;
+                }
+            }
+            .themes{
+                width: 198px;
+                padding: .75rem;
+
+                .colored-button{
+                    width: 37px;
+                    height: 37px;
+
+                    .selected{
+                        width: 21px;
+                        height: 21px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
         top: 1rem;
-        right: 1rem;
+        right: 1.5rem;
 
         .button{
             font-size: 16px;

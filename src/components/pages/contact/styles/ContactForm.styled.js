@@ -129,4 +129,110 @@ export const ContactFormContainer = styled.form`
             animation-name: sendButtonIconAnimation;
         }
     }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        padding: 1.5rem;
+
+        .form-row{
+            .form-row-split-line{
+                height: 22.5px; //same height as input
+                width: 1.1px;
+                min-width: 1.1px;
+                margin-right: 1rem;
+            }
+            label, input, textarea{
+                font-size: 13px;
+            }
+            input, textarea{
+                height: 22.5px;
+            }
+            label{
+                width: 14%;
+                min-width: 82.5px;
+            }
+            textarea{
+                padding-top: .1rem;
+                min-height: 25px;
+            }
+        }
+        .form-row-buttons{
+            width: 100%;
+        }
+        .form-row-buttons > *{
+            font-size: 14px;
+            margin-top: .5rem;
+        }
+
+        .reset{
+            padding: .5rem .75rem;
+            margin-left: .75rem;
+        }
+        .submit{
+            padding: .5rem 1.25rem .5rem 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 1rem;
+        margin-bottom: 2rem;
+
+        .form-row{
+            padding: .35rem .75rem;
+            margin-bottom: .75rem;
+            border-bottom: 1.6px solid ${({ theme }) => theme.themeColors.mainColor};
+            
+            .form-row-split-line{
+                height: 22px; //same height as input
+                margin-right: .75rem;
+            }
+            label, input, textarea{
+                font-size: 12px;
+            }
+            input, textarea{
+                height: 22px;
+            }
+            label{
+                width: 14%;
+                min-width: 70px;
+            }
+            textarea{
+                min-height: 22px;
+            }
+        }
+        .form-row-buttons > *{
+            font-size: 14px;
+            margin-top: .5rem;
+        }
+
+        .reset{
+            padding: .35rem .75rem;
+            margin-left: .75rem;
+        }
+        
+        @keyframes sendButtonIconAnimation{
+            from{
+                transform: scale(0);
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+                transform: scale(1);
+                padding: 0 .35rem 0 .75rem;
+            }
+        }
+        @keyframes sendButtonIconAnimationEnd{
+            from{
+                opacity: 1;
+                transform: scale(1);
+                padding: 0 .35rem 0 .75rem;
+            }
+            to{
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+        .submit{
+            padding: .35rem 1rem .35rem 0;
+        }
+    }
 `

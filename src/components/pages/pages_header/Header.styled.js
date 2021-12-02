@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +9,8 @@ export const HeaderContainer = styled.header`
     width: 100vw;
     height: 105px;
     max-width: 1550px;
-    padding: 0 7.5rem 0 2.75rem;
+    padding: 0 8.5rem 0 2.75rem;
+    z-index: 1;
 
     .logo{
         color: ${({ theme }) => theme.themeColors.mainColor};
@@ -56,10 +57,27 @@ export const HeaderContainer = styled.header`
             color: ${({ theme }) => theme.themeColors.mainColor};
         }
     }
+    @media (min-width: 768px) and (max-width: 1200px){
+        height: 85px;
+        padding: 0 6.5rem 0 2rem;
 
+        .logo{
+            h1{
+                font-size: 28px;
+            }
+        }
+        nav{
+            ul{
+                a{
+                    font-size: 16px;
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
     @media (max-width: 767px){
         height: 65px;
-        padding: 0 4.1rem 0 1.5rem;
+        padding: 0 4.75rem 0 1.5rem;
 
         .logo{
             h1{
