@@ -4,7 +4,7 @@ export const QuoteContainer = styled.div`
     position: relative;
     min-width: 30%;
     height: 100px;
-    margin: 2rem;
+    margin: 2rem 3.5rem;
     align-self: flex-end;
     z-index: -1;
 
@@ -18,7 +18,7 @@ export const QuoteContainer = styled.div`
     p{
         color: ${({ theme }) => theme.fontColors.primary };
         position:absolute;
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: 2px;
         text-shadow: -1px 1px 3px rgb(0 0 0 / 79%);
 
@@ -42,12 +42,13 @@ export const QuoteContainer = styled.div`
         margin: 1rem;
 
         .quote{
-            font-size: 14px;
+            font-size: 13px;
             top: -20px;
         }
         p{
             position:absolute;
-            font-size: 14px;
+            font-size: 12px;
+            font-weight: 400;
         }
         .learn{
             top: 0px;

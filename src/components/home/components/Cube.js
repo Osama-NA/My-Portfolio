@@ -12,14 +12,14 @@ export const Cube = ({position, color}) => {
 
     // Rotates cube on z axis
     useFrame(( ) => {
-        ref.current.rotation.z += 0.009;
+        ref.current.rotation.z += 0.005;
     });
 
     return(
         <RoundedBox 
             args={[1.5, 1.5, scaledOut?2.5:1.5]} //On click scales z axis out and in
             position={position} 
-            radius={0.25} 
+            radius={0.2} 
             onClick={scaleOut} // on click set 'scaledOut' state to scale z axis of current cube
             ref={ref} 
         >

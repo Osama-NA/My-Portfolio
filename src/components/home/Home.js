@@ -14,7 +14,7 @@ export const Home = ({cubesColor, circleBackground}) => {
             <footer>
                 <Quote />
                 <IconLinks />
-                <HelloButton />
+                {/* <HelloButton /> */}
             </footer>
         </HomeContainer>
     )

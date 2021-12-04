@@ -10,17 +10,17 @@ export const ThreeDCubes = ({ cubesColor }) => {
                 <Canvas colorManagement camera={{ position: [0.0001, -0.0001, 5.7] }}> {/* canvas camera adjustment using camera position attribute */}
 
                     {/* LIGHTING */}
-                    <pointLight position={[10, 0, 0]} intensity={.7} />
-                    <pointLight position={[-10, 0, 0]} intensity={.7} />
-                    <pointLight position={[0, 10, 0]} intensity={.7} />
+                    <pointLight position={[10, 0, 0]} intensity={.3} />
+                    <pointLight position={[-10, 0, 0]} intensity={.3} />
+                    <pointLight position={[0, 10, 0]} intensity={.4} />
                     <pointLight position={[0, -10, 0]} intensity={.4} />
-                    <pointLight position={[0, 0, 10]} intensity={.2} />
-                    <pointLight position={[0, 0, -10]} intensity={.2} />
-                    <pointLight position={[-10, 10, 0]} intensity={.3} />
-                    <pointLight position={[10, -10, 0]} intensity={.3} />
-                    <pointLight position={[0, -10, 10]} intensity={.3} />
+                    <pointLight position={[0, 0, 10]} intensity={.35} />
+                    <pointLight position={[0, 0, -10]} intensity={.35} />
+                    <pointLight position={[-10, 10, 0]} intensity={.2} />
+                    <pointLight position={[10, -10, 0]} intensity={.2} />
+                    <pointLight position={[0, -10, 10]} intensity={.2} />
                     <pointLight position={[0, 10, -10]} intensity={.3} />
-                    <ambientLight intensity={.5} />
+                    <ambientLight intensity={.275} />
 
                     {/* CUBES */}
                     <Cube position={[-2, 2, 0]} color={cubesColor} /><Cube position={[0, 2, 0]} color={cubesColor} /><Cube position={[2, 2, 0]} color={cubesColor} />
