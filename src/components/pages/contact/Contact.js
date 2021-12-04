@@ -1,15 +1,16 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ContactContainer } from './styles/Contact.styled.js';
 import { Header } from '../pages_header/Header';
 import { ContactForm } from './components/ContactForm';
 import { Socials } from './components/Socials';
-import { EmailSuccessContext} from '../../../contexts/EmailSuccessContext.js';
+import { EmailSuccessContext } from '../../../contexts/EmailSuccessContext.js';
 
 export const Contact = () => {
 
     const { emailSuccessState, setEmailSuccess } = useContext(EmailSuccessContext);
 
     const [displayEmailSuccessMessage, setDisplayEmailSuccessMessage] = useState({ display: "none" });
+    const [showNavBackgroundColor, setShowNavBackgroundColor] = useState(false);
 
     const closeSuccessMessageContainer = () => setDisplayEmailSuccessMessage({ display: "none" });
 
@@ -25,42 +26,59 @@ export const Contact = () => {
         setEmailSuccess(false);
     }, [displayEmailSuccessMessage, setEmailSuccess])
 
+    useEffect(() => {
+        setEmailSuccess(false);
+    }, [displayEmailSuccessMessage, setEmailSuccess])
+
+    // Add on scroll event listener to handle header background color
+    useEffect(() => {
+        document.addEventListener('scroll', (e) => {
+            const scrollTopValue = e.target.childNodes[1].scrollTop;
+
+            if (scrollTopValue > 30 && !showNavBackgroundColor) {
+                setShowNavBackgroundColor(true)
+            } else if (scrollTopValue < 30 && showNavBackgroundColor){
+                setShowNavBackgroundColor(false)
+            }
+        });
+    }, [showNavBackgroundColor]);
+
     return (
-            <ContactContainer>
-                <Header page="Contact" />
+        <ContactContainer>
+            <Header page="Contact" navColor={showNavBackgroundColor} />
 
-                <h3 className="contact-heading">Get in touch</h3>
+            <h3 className="contact-heading">Get in touch</h3>
 
-                <main className="contact-container">
-                    <div className="contact-form">
-                        <h4>
-                            <i className="far fa-envelope"></i>
-                            Send me an email
-                        </h4>
-                        <ContactForm />
-                    </div>
-                    <div className="contact-socials">
-                        <h4>
-                            <i className="fas fa-hashtag"></i>
-                            Check out my socials
-                        </h4>
-                        <Socials />
-                    </div>
-                </main>
+            <main className="contact-container">
+                <div className="contact-form">
+                    <h4>
+                        <i className="far fa-envelope"></i>
+                        Send me an email
+                    </h4>
+                    <ContactForm />
+                </div>
+                <div className="contact-socials">
+                    <h4>
+                        <i className="fas fa-hashtag"></i>
+                        Check out my socials
+                    </h4>
+                    <Socials />
+                </div>
+            </main>
 
-                <div 
-                className="email-success-message-container" 
+            <div
+                className="email-success-message-container"
                 onClick={closeSuccessMessageContainer}
                 style={displayEmailSuccessMessage}
-                >
-                    <div className="email-success-message">
-                        <h6>
-                            <i className="fas fa-check-circle"></i>
-                            Email Successfully Sent
-                        </h6>
-                        <p>Click anywhere</p>
-                    </div>
+            >
+                <div className="email-success-message">
+                    <h6>
+                        <i className="fas fa-check-circle"></i>
+                        Email Successfully Sent
+                    </h6>
+                    <p>Click anywhere</p>
                 </div>
-            </ContactContainer>
+            </div>
+        </ContactContainer>
     )
 }

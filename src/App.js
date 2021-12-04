@@ -15,11 +15,11 @@ import { EmailSuccessProvider } from './contexts/EmailSuccessContext.js';
 function App() {
 
   const {theme} = useContext(ThemesContext);
-
+  
   return (
     <ThemeProvider theme={theme}>
       <AppContainer>
-        <EmailSuccessProvider>
+        <EmailSuccessProvider>  {/* Context used in Contact component*/}
         
         <BrowserRouter basename="Router">
           <Switch>

@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HeaderContainer } from './Header.styled';
 
-export const Header = ({page}) => {
+export const Header = ({page, navColor}) => {
+
     const [showMenu, setShowMenu] = useState(false);
     const [dashOneStyle, setDashOneStyle] = useState({});
     const [dashTwoStyle, setDashTwoStyle] = useState({});
     const [dashThreeStyle, setDashThreeStyle] = useState({});
     const [menuStyle, setMenuStyle] = useState({});
+    const [navBackgroundColor, setNavBackgroundColor] = useState({backgroundColor: "transparent"});
 
     // OPEN MENU AND ADD MENU AND MENU BUTTON ANIMATIONS IF MENU IS NOT SHOWN,
     // OTHERWISE, ADD CLOSE MENU AND MENU BUTTON ANIMATIONS IF MENU IS SHOWN
@@ -50,8 +52,14 @@ export const Header = ({page}) => {
         setDashThreeStyle({ animationName: 'dashThreeCloseAnimation' });
     }
 
+    useEffect(() => {
+        const backgroundColor = navColor ?"#242429":"transparent";
+        setNavBackgroundColor({backgroundColor: backgroundColor});
+
+    }, [navColor])
+    
     return (
-        <HeaderContainer>
+        <HeaderContainer style={navBackgroundColor}>
             {/* NAME LOGO */}
             <Link to="/" className="logo">
                 <h1>Osama Al Haj Ali</h1>

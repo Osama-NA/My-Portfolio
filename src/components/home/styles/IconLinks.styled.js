@@ -74,8 +74,8 @@ export const IconLinksContainer = styled.div`
             animation-delay: 1.2s;
 
             i{
-                opacity: .85;
-                font-size: 38px;
+                opacity: .9;
+                font-size: 48px;
                 color: ${({ theme }) => theme.themeColors.mainColor};
                 text-shadow: -1px 1px 10px rgb(0 0 0 / 40%);
                 transition: all .1s ease;

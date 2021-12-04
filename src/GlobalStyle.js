@@ -11,15 +11,14 @@ export const GlobalStyle = createGlobalStyle`
     }
     body{
         color: ${({ theme }) => theme.fontColors.primary};
-        display: flex;
-        justify-content: center;
         width: 100vw;
-        height: 100vh;
 
         background: linear-gradient(
             45deg, 
             ${({ theme }) => theme.backgroundColors.darkSide} 50%, 
             ${({ theme }) => theme.backgroundColors.lightSide} 50%
         );
+        background-repeat: no-repeat;
+        background-color: ${({ theme }) => theme.backgroundColors.darkSide};
     }
 `

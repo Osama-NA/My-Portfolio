@@ -74,7 +74,7 @@ export const lightBlueGrayTheme = {
         lightBackground: '#3F3F47',
         navBackground: '#383840'
     },
-    cubesColor: '#00E6E2',
+    cubesColor: '#00CBE6',
     circleBackground: '#313138'
 }
 

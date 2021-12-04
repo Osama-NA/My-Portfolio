@@ -140,6 +140,7 @@ export const ContactContainer = styled.div`
             font-size: 22px;
             padding-left: 1.75rem;
             margin: 1.2rem 2rem;
+            margin-top: 100px;
         }
         .contact-heading::after{
             width: 4px;

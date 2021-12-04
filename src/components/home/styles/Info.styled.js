@@ -23,9 +23,10 @@ export const InfoContainer = styled.main`
     h1{
         text-transform: uppercase;
         color: ${({ theme }) => theme.themeColors.mainColor};
-        font-family: 'Jaldi', sans-serif;
-        font-size: 60px;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 46px;
         font-weight: 700;
+        padding-bottom: 1rem;
         letter-spacing: 2.5px;
     }
     // TITLE
@@ -98,7 +99,8 @@ export const InfoContainer = styled.main`
         min-height: 250px;
 
         h1{
-            font-size: 36px;
+            font-size: 26px;
+            padding-bottom: .5rem;
         }
         h3{
             font-size: 21px;

@@ -17,9 +17,9 @@ export const HeaderContainer = styled.header`
         text-decoration: none;
 
         h1{
-            font-family: 'Jaldi', sans-serif;
+            font-family: 'Permanent Marker', cursive;
             text-transform:uppercase;
-            font-size: 38px;
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: 2.5px;
         }
@@ -81,7 +81,7 @@ export const HeaderContainer = styled.header`
 
         .logo{
             h1{
-                font-size: 24px;
+                font-size: 18px;
             }
         }
 
