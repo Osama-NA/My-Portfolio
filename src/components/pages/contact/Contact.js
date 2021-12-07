@@ -26,10 +26,6 @@ export const Contact = () => {
         setEmailSuccess(false);
     }, [displayEmailSuccessMessage, setEmailSuccess])
 
-    useEffect(() => {
-        setEmailSuccess(false);
-    }, [displayEmailSuccessMessage, setEmailSuccess])
-
     // Add on scroll event listener to handle header background color
     useEffect(() => {
         document.addEventListener('scroll', (e) => {

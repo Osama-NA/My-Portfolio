@@ -10,19 +10,24 @@ export const HomeContainer = styled.div`
     align-items: center;
     overflow: hidden;
     
-    footer{
+    header, footer{
         width: 100%;
-        min-height: 60px;
-        position: absolute;
-        bottom: 0;
-        left: 0; 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    header{
+        z-index: 1;
 
-        .hello-button{
-            align-self: flex-end;
-            margin: 2rem;
+        .themes-button{
+            margin: 1.75rem 1.75rem 0 0;
         }
+    }
+    footer{
+        min-height: 60px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 1.75rem;
     }
 `

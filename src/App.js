@@ -7,7 +7,6 @@ import { Projects } from './components/pages/projects/Projects.js';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AppContainer } from './App.styled.js';
 import { ThemesContext } from './contexts/ThemesContext';
-import { ThemesButton } from './components/ThemesButton/ThemesButton';
 import { BackgroundParticles } from './components/particles/BackgroundParticles'
 import { useContext } from 'react';
 import { EmailSuccessProvider } from './contexts/EmailSuccessContext.js';
@@ -36,8 +35,6 @@ function App() {
           </Switch>
         </BrowserRouter>
 
-        {/* Theme settings button */}
-        <ThemesButton />
         <GlobalStyle />
         </EmailSuccessProvider>
       </AppContainer>

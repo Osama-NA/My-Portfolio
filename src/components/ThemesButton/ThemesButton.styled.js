@@ -1,14 +1,10 @@
 import styled from 'styled-components';
 
 export const ThemesButtonContainer = styled.div`
-    position: fixed;
-    top: 2rem;
-    right: 3.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    z-index: 1;
-
+    
     .button{
         position: relative;
         cursor: pointer;

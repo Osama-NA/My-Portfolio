@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 
 export const IconLinksContainer = styled.div`
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 2rem;
 
     .github-link{
         div{

@@ -4,9 +4,7 @@ export const QuoteContainer = styled.div`
     position: relative;
     min-width: 30%;
     height: 100px;
-    margin: 2rem 3.5rem;
     align-self: flex-end;
-    z-index: -1;
 
     .quote{
         color: ${({ theme }) => theme.themeColors.mainColor };
