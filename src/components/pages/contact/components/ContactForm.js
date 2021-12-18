@@ -5,6 +5,11 @@ import {EmailSuccessContext} from '../../../../contexts/EmailSuccessContext.js';
 
 export const ContactForm = () => {
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
     const contactForm = useRef();
 
     // EmailSuccessContext is used here to let the parent container know when an email 
@@ -15,8 +20,6 @@ export const ContactForm = () => {
     //Function to send email to 'my email' using Email.Js
     const sendEmail = (e) => {
         e.preventDefault();
-
-        const message = e.target.message.value;
 
         //Only send email if message is not less than 8 characters 
         if (message.length < 8) {
@@ -54,22 +57,22 @@ export const ContactForm = () => {
             <div className="form-row">
                 <label>Name</label>
                 <div className="form-row-split-line"></div>
-                <input type="text" name="name" placeholder="Gyōmei Himejima" required />
+                <input type="text" value={name} onChange={(e)=>setName(e.target.value)}  name="name" placeholder="Gyōmei Himejima" required />
             </div>
             <div className="form-row">
                 <label>Email</label>
                 <div className="form-row-split-line"></div>
-                <input type="text" name="email" placeholder="Gyōmei@gmail.com" required />
+                <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)}  name="email" placeholder="Gyōmei@gmail.com" required />
             </div>
             <div className="form-row">
                 <label>Subject</label>
                 <div className="form-row-split-line"></div>
-                <input type="text" name="subject" placeholder="Web Project . ." required />
+                <input type="text" value={subject} onChange={(e)=>setSubject(e.target.value)}  name="subject" placeholder="Web Project . ." required />
             </div>
             <div className="form-row">
                 <label>Message</label>
                 <div className="form-row-split-line"></div>
-                <textarea name="message" placeholder="Hello Osama . ." required />
+                <textarea value={message} onChange={(e)=>setMessage(e.target.value)}  name="message" placeholder="Hello Osama . ." required />
             </div>
             <div className="form-row-buttons">
                 <button type="reset" className="reset">RESET</button>
